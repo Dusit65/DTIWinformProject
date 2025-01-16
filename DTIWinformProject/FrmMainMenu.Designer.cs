@@ -1,6 +1,6 @@
 ﻿namespace DTIWinformProject
 {
-    partial class หน้าจอหลัก
+    partial class FrmMainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(หน้าจอหลัก));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainMenu));
             this.HeadLabel = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.BTLogout = new System.Windows.Forms.Button();
-            this.BTgoShapeArea = new System.Windows.Forms.Button();
-            this.BTgoRegister = new System.Windows.Forms.Button();
-            this.BTGoLotto = new System.Windows.Forms.Button();
-            this.BTgoDooDuang = new System.Windows.Forms.Button();
-            this.BTgoSAUShop = new System.Windows.Forms.Button();
-            this.BTgoCalculator = new System.Windows.Forms.Button();
-            this.BTgoWelcome = new System.Windows.Forms.Button();
+            this.btLogout = new System.Windows.Forms.Button();
+            this.btGoShapeArea = new System.Windows.Forms.Button();
+            this.btGoRegister = new System.Windows.Forms.Button();
+            this.btGoLotto = new System.Windows.Forms.Button();
+            this.btGoDooDuang = new System.Windows.Forms.Button();
+            this.btGoSAUShop = new System.Windows.Forms.Button();
+            this.btGoCalculator = new System.Windows.Forms.Button();
+            this.btGoWelcome = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,10 +49,9 @@
             this.HeadLabel.BackColor = System.Drawing.Color.Yellow;
             this.HeadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HeadLabel.ForeColor = System.Drawing.Color.Blue;
-            this.HeadLabel.Location = new System.Drawing.Point(9, 7);
-            this.HeadLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.HeadLabel.Location = new System.Drawing.Point(12, 9);
             this.HeadLabel.Name = "HeadLabel";
-            this.HeadLabel.Size = new System.Drawing.Size(742, 55);
+            this.HeadLabel.Size = new System.Drawing.Size(989, 68);
             this.HeadLabel.TabIndex = 1;
             this.HeadLabel.Text = "DTI Soft V.1.0";
             this.HeadLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -64,9 +63,9 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.toolStripLabel2});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 504);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 626);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(760, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1013, 25);
             this.toolStrip1.TabIndex = 10;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
@@ -75,148 +74,148 @@
             // 
             this.toolStripLabel1.ForeColor = System.Drawing.Color.Blue;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(42, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(53, 22);
             this.toolStripLabel1.Text = "name?";
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(59, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(76, 22);
             this.toolStripLabel2.Text = "datetime?";
             // 
-            // BTLogout
+            // btLogout
             // 
-            this.BTLogout.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTLogout.Image = global::DTIWinformProject.Properties.Resources.exitapp;
-            this.BTLogout.Location = new System.Drawing.Point(632, 304);
-            this.BTLogout.Margin = new System.Windows.Forms.Padding(2);
-            this.BTLogout.Name = "BTLogout";
-            this.BTLogout.Size = new System.Drawing.Size(120, 140);
-            this.BTLogout.TabIndex = 9;
-            this.BTLogout.Text = "ออกจากระบบ";
-            this.BTLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BTLogout.UseVisualStyleBackColor = false;
+            this.btLogout.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLogout.Image = global::DTIWinformProject.Properties.Resources.exitapp;
+            this.btLogout.Location = new System.Drawing.Point(843, 374);
+            this.btLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btLogout.Name = "btLogout";
+            this.btLogout.Size = new System.Drawing.Size(160, 172);
+            this.btLogout.TabIndex = 9;
+            this.btLogout.Text = "ออกจากระบบ";
+            this.btLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btLogout.UseVisualStyleBackColor = false;
             // 
-            // BTgoShapeArea
+            // btGoShapeArea
             // 
-            this.BTgoShapeArea.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTgoShapeArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTgoShapeArea.Image = global::DTIWinformProject.Properties.Resources.menu7;
-            this.BTgoShapeArea.Location = new System.Drawing.Point(222, 304);
-            this.BTgoShapeArea.Margin = new System.Windows.Forms.Padding(2);
-            this.BTgoShapeArea.Name = "BTgoShapeArea";
-            this.BTgoShapeArea.Size = new System.Drawing.Size(120, 140);
-            this.BTgoShapeArea.TabIndex = 8;
-            this.BTgoShapeArea.Text = "Go to Shape Area";
-            this.BTgoShapeArea.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BTgoShapeArea.UseVisualStyleBackColor = false;
+            this.btGoShapeArea.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btGoShapeArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btGoShapeArea.Image = global::DTIWinformProject.Properties.Resources.menu7;
+            this.btGoShapeArea.Location = new System.Drawing.Point(296, 374);
+            this.btGoShapeArea.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGoShapeArea.Name = "btGoShapeArea";
+            this.btGoShapeArea.Size = new System.Drawing.Size(160, 172);
+            this.btGoShapeArea.TabIndex = 8;
+            this.btGoShapeArea.Text = "Go to Shape Area";
+            this.btGoShapeArea.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btGoShapeArea.UseVisualStyleBackColor = false;
             // 
-            // BTgoRegister
+            // btGoRegister
             // 
-            this.BTgoRegister.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTgoRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTgoRegister.Image = global::DTIWinformProject.Properties.Resources.menu6;
-            this.BTgoRegister.Location = new System.Drawing.Point(430, 304);
-            this.BTgoRegister.Margin = new System.Windows.Forms.Padding(2);
-            this.BTgoRegister.Name = "BTgoRegister";
-            this.BTgoRegister.Size = new System.Drawing.Size(120, 140);
-            this.BTgoRegister.TabIndex = 7;
-            this.BTgoRegister.Text = "Go to Register";
-            this.BTgoRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BTgoRegister.UseVisualStyleBackColor = false;
+            this.btGoRegister.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btGoRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btGoRegister.Image = global::DTIWinformProject.Properties.Resources.menu6;
+            this.btGoRegister.Location = new System.Drawing.Point(573, 374);
+            this.btGoRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGoRegister.Name = "btGoRegister";
+            this.btGoRegister.Size = new System.Drawing.Size(160, 172);
+            this.btGoRegister.TabIndex = 7;
+            this.btGoRegister.Text = "Go to Register";
+            this.btGoRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btGoRegister.UseVisualStyleBackColor = false;
             // 
-            // BTGoLotto
+            // btGoLotto
             // 
-            this.BTGoLotto.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTGoLotto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTGoLotto.Image = global::DTIWinformProject.Properties.Resources.menu4;
-            this.BTGoLotto.Location = new System.Drawing.Point(632, 82);
-            this.BTGoLotto.Margin = new System.Windows.Forms.Padding(2);
-            this.BTGoLotto.Name = "BTGoLotto";
-            this.BTGoLotto.Size = new System.Drawing.Size(120, 140);
-            this.BTGoLotto.TabIndex = 6;
-            this.BTGoLotto.Text = "Go to Lotto";
-            this.BTGoLotto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BTGoLotto.UseVisualStyleBackColor = false;
+            this.btGoLotto.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btGoLotto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btGoLotto.Image = global::DTIWinformProject.Properties.Resources.menu4;
+            this.btGoLotto.Location = new System.Drawing.Point(843, 101);
+            this.btGoLotto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGoLotto.Name = "btGoLotto";
+            this.btGoLotto.Size = new System.Drawing.Size(160, 172);
+            this.btGoLotto.TabIndex = 6;
+            this.btGoLotto.Text = "Go to Lotto";
+            this.btGoLotto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btGoLotto.UseVisualStyleBackColor = false;
             // 
-            // BTgoDooDuang
+            // btGoDooDuang
             // 
-            this.BTgoDooDuang.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTgoDooDuang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTgoDooDuang.Image = global::DTIWinformProject.Properties.Resources.menu5;
-            this.BTgoDooDuang.Location = new System.Drawing.Point(14, 304);
-            this.BTgoDooDuang.Margin = new System.Windows.Forms.Padding(2);
-            this.BTgoDooDuang.Name = "BTgoDooDuang";
-            this.BTgoDooDuang.Size = new System.Drawing.Size(120, 140);
-            this.BTgoDooDuang.TabIndex = 5;
-            this.BTgoDooDuang.Text = "Go to Doo Duang";
-            this.BTgoDooDuang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BTgoDooDuang.UseVisualStyleBackColor = false;
+            this.btGoDooDuang.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btGoDooDuang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btGoDooDuang.Image = global::DTIWinformProject.Properties.Resources.menu5;
+            this.btGoDooDuang.Location = new System.Drawing.Point(19, 374);
+            this.btGoDooDuang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGoDooDuang.Name = "btGoDooDuang";
+            this.btGoDooDuang.Size = new System.Drawing.Size(160, 172);
+            this.btGoDooDuang.TabIndex = 5;
+            this.btGoDooDuang.Text = "Go to Doo Duang";
+            this.btGoDooDuang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btGoDooDuang.UseVisualStyleBackColor = false;
             // 
-            // BTgoSAUShop
+            // btGoSAUShop
             // 
-            this.BTgoSAUShop.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTgoSAUShop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTgoSAUShop.Image = global::DTIWinformProject.Properties.Resources.menu3;
-            this.BTgoSAUShop.Location = new System.Drawing.Point(430, 82);
-            this.BTgoSAUShop.Margin = new System.Windows.Forms.Padding(2);
-            this.BTgoSAUShop.Name = "BTgoSAUShop";
-            this.BTgoSAUShop.Size = new System.Drawing.Size(120, 140);
-            this.BTgoSAUShop.TabIndex = 4;
-            this.BTgoSAUShop.Text = "Go to SAU Shop";
-            this.BTgoSAUShop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BTgoSAUShop.UseVisualStyleBackColor = false;
+            this.btGoSAUShop.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btGoSAUShop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btGoSAUShop.Image = global::DTIWinformProject.Properties.Resources.menu3;
+            this.btGoSAUShop.Location = new System.Drawing.Point(573, 101);
+            this.btGoSAUShop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGoSAUShop.Name = "btGoSAUShop";
+            this.btGoSAUShop.Size = new System.Drawing.Size(160, 172);
+            this.btGoSAUShop.TabIndex = 4;
+            this.btGoSAUShop.Text = "Go to SAU Shop";
+            this.btGoSAUShop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btGoSAUShop.UseVisualStyleBackColor = false;
             // 
-            // BTgoCalculator
+            // btGoCalculator
             // 
-            this.BTgoCalculator.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTgoCalculator.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTgoCalculator.Image = global::DTIWinformProject.Properties.Resources.menu2;
-            this.BTgoCalculator.Location = new System.Drawing.Point(222, 82);
-            this.BTgoCalculator.Margin = new System.Windows.Forms.Padding(2);
-            this.BTgoCalculator.Name = "BTgoCalculator";
-            this.BTgoCalculator.Size = new System.Drawing.Size(120, 140);
-            this.BTgoCalculator.TabIndex = 3;
-            this.BTgoCalculator.Text = "Go to Calculator";
-            this.BTgoCalculator.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BTgoCalculator.UseVisualStyleBackColor = false;
+            this.btGoCalculator.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btGoCalculator.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btGoCalculator.Image = global::DTIWinformProject.Properties.Resources.menu2;
+            this.btGoCalculator.Location = new System.Drawing.Point(296, 101);
+            this.btGoCalculator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGoCalculator.Name = "btGoCalculator";
+            this.btGoCalculator.Size = new System.Drawing.Size(160, 172);
+            this.btGoCalculator.TabIndex = 3;
+            this.btGoCalculator.Text = "Go to Calculator";
+            this.btGoCalculator.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btGoCalculator.UseVisualStyleBackColor = false;
             // 
-            // BTgoWelcome
+            // btGoWelcome
             // 
-            this.BTgoWelcome.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTgoWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTgoWelcome.Image = global::DTIWinformProject.Properties.Resources.menu1;
-            this.BTgoWelcome.Location = new System.Drawing.Point(14, 82);
-            this.BTgoWelcome.Margin = new System.Windows.Forms.Padding(2);
-            this.BTgoWelcome.Name = "BTgoWelcome";
-            this.BTgoWelcome.Size = new System.Drawing.Size(120, 140);
-            this.BTgoWelcome.TabIndex = 2;
-            this.BTgoWelcome.Text = "Go to Welcome";
-            this.BTgoWelcome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BTgoWelcome.UseVisualStyleBackColor = false;
+            this.btGoWelcome.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btGoWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btGoWelcome.Image = global::DTIWinformProject.Properties.Resources.menu1;
+            this.btGoWelcome.Location = new System.Drawing.Point(19, 101);
+            this.btGoWelcome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGoWelcome.Name = "btGoWelcome";
+            this.btGoWelcome.Size = new System.Drawing.Size(160, 172);
+            this.btGoWelcome.TabIndex = 2;
+            this.btGoWelcome.Text = "Go to Welcome";
+            this.btGoWelcome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btGoWelcome.UseVisualStyleBackColor = false;
             // 
-            // หน้าจอหลัก
+            // FrmMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 529);
+            this.ClientSize = new System.Drawing.Size(1013, 651);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.BTLogout);
-            this.Controls.Add(this.BTgoShapeArea);
-            this.Controls.Add(this.BTgoRegister);
-            this.Controls.Add(this.BTGoLotto);
-            this.Controls.Add(this.BTgoDooDuang);
-            this.Controls.Add(this.BTgoSAUShop);
-            this.Controls.Add(this.BTgoCalculator);
-            this.Controls.Add(this.BTgoWelcome);
+            this.Controls.Add(this.btLogout);
+            this.Controls.Add(this.btGoShapeArea);
+            this.Controls.Add(this.btGoRegister);
+            this.Controls.Add(this.btGoLotto);
+            this.Controls.Add(this.btGoDooDuang);
+            this.Controls.Add(this.btGoSAUShop);
+            this.Controls.Add(this.btGoCalculator);
+            this.Controls.Add(this.btGoWelcome);
             this.Controls.Add(this.HeadLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "หน้าจอหลัก";
+            this.Name = "FrmMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "หน้าจอหลัก - DTI Soft V.1.0";
             this.Load += new System.EventHandler(this.FrmMainMenu_Load);
@@ -230,14 +229,14 @@
         #endregion
 
         private System.Windows.Forms.Label HeadLabel;
-        private System.Windows.Forms.Button BTgoWelcome;
-        private System.Windows.Forms.Button BTgoCalculator;
-        private System.Windows.Forms.Button BTgoSAUShop;
-        private System.Windows.Forms.Button BTgoDooDuang;
-        private System.Windows.Forms.Button BTGoLotto;
-        private System.Windows.Forms.Button BTgoRegister;
-        private System.Windows.Forms.Button BTgoShapeArea;
-        private System.Windows.Forms.Button BTLogout;
+        private System.Windows.Forms.Button btGoWelcome;
+        private System.Windows.Forms.Button btGoCalculator;
+        private System.Windows.Forms.Button btGoSAUShop;
+        private System.Windows.Forms.Button btGoDooDuang;
+        private System.Windows.Forms.Button btGoLotto;
+        private System.Windows.Forms.Button btGoRegister;
+        private System.Windows.Forms.Button btGoShapeArea;
+        private System.Windows.Forms.Button btLogout;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;

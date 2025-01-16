@@ -33,13 +33,13 @@
             this.HeadLabel = new System.Windows.Forms.Label();
             this.TextUser = new System.Windows.Forms.Label();
             this.TextPassword = new System.Windows.Forms.Label();
-            this.TFUsername = new System.Windows.Forms.TextBox();
-            this.TFPassword = new System.Windows.Forms.TextBox();
-            this.radioStudent = new System.Windows.Forms.RadioButton();
-            this.radioTeacher = new System.Windows.Forms.RadioButton();
-            this.BTLogout = new System.Windows.Forms.Button();
-            this.BTCancel = new System.Windows.Forms.Button();
-            this.BTLogin = new System.Windows.Forms.Button();
+            this.tbUsername = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.rdStudent = new System.Windows.Forms.RadioButton();
+            this.rdTeacher = new System.Windows.Forms.RadioButton();
+            this.btLogout = new System.Windows.Forms.Button();
+            this.btCancel = new System.Windows.Forms.Button();
+            this.btLogin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,7 +57,6 @@
             this.HeadLabel.TabIndex = 0;
             this.HeadLabel.Text = "DTI Soft V.1.0";
             this.HeadLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.HeadLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // TextUser
             // 
@@ -79,88 +78,91 @@
             this.TextPassword.TabIndex = 2;
             this.TextPassword.Text = "รหัสผ่าน :";
             // 
-            // TFUsername
+            // tbUsername
             // 
-            this.TFUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TFUsername.Location = new System.Drawing.Point(413, 155);
-            this.TFUsername.Name = "TFUsername";
-            this.TFUsername.Size = new System.Drawing.Size(442, 34);
-            this.TFUsername.TabIndex = 3;
+            this.tbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsername.Location = new System.Drawing.Point(413, 155);
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.Size = new System.Drawing.Size(442, 34);
+            this.tbUsername.TabIndex = 3;
             // 
-            // TFPassword
+            // tbPassword
             // 
-            this.TFPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TFPassword.Location = new System.Drawing.Point(413, 240);
-            this.TFPassword.Name = "TFPassword";
-            this.TFPassword.PasswordChar = '*';
-            this.TFPassword.Size = new System.Drawing.Size(442, 34);
-            this.TFPassword.TabIndex = 4;
+            this.tbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassword.Location = new System.Drawing.Point(413, 240);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '*';
+            this.tbPassword.Size = new System.Drawing.Size(442, 34);
+            this.tbPassword.TabIndex = 4;
             // 
-            // radioStudent
+            // rdStudent
             // 
-            this.radioStudent.AutoSize = true;
-            this.radioStudent.Checked = true;
-            this.radioStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioStudent.Location = new System.Drawing.Point(480, 317);
-            this.radioStudent.Name = "radioStudent";
-            this.radioStudent.Size = new System.Drawing.Size(93, 26);
-            this.radioStudent.TabIndex = 6;
-            this.radioStudent.TabStop = true;
-            this.radioStudent.Text = "Student";
-            this.radioStudent.UseVisualStyleBackColor = true;
+            this.rdStudent.AutoSize = true;
+            this.rdStudent.Checked = true;
+            this.rdStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdStudent.Location = new System.Drawing.Point(480, 317);
+            this.rdStudent.Name = "rdStudent";
+            this.rdStudent.Size = new System.Drawing.Size(93, 26);
+            this.rdStudent.TabIndex = 6;
+            this.rdStudent.TabStop = true;
+            this.rdStudent.Text = "Student";
+            this.rdStudent.UseVisualStyleBackColor = true;
             // 
-            // radioTeacher
+            // rdTeacher
             // 
-            this.radioTeacher.AutoSize = true;
-            this.radioTeacher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioTeacher.Location = new System.Drawing.Point(647, 317);
-            this.radioTeacher.Name = "radioTeacher";
-            this.radioTeacher.Size = new System.Drawing.Size(98, 26);
-            this.radioTeacher.TabIndex = 7;
-            this.radioTeacher.Text = "Teacher";
-            this.radioTeacher.UseVisualStyleBackColor = true;
+            this.rdTeacher.AutoSize = true;
+            this.rdTeacher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdTeacher.Location = new System.Drawing.Point(647, 317);
+            this.rdTeacher.Name = "rdTeacher";
+            this.rdTeacher.Size = new System.Drawing.Size(98, 26);
+            this.rdTeacher.TabIndex = 7;
+            this.rdTeacher.Text = "Teacher";
+            this.rdTeacher.UseVisualStyleBackColor = true;
             // 
-            // BTLogout
+            // btLogout
             // 
-            this.BTLogout.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTLogout.Image = global::DTIWinformProject.Properties.Resources.exit3;
-            this.BTLogout.Location = new System.Drawing.Point(413, 495);
-            this.BTLogout.Name = "BTLogout";
-            this.BTLogout.Size = new System.Drawing.Size(442, 72);
-            this.BTLogout.TabIndex = 10;
-            this.BTLogout.Text = "ออกจากระบบ";
-            this.BTLogout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTLogout.UseVisualStyleBackColor = false;
+            this.btLogout.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLogout.Image = global::DTIWinformProject.Properties.Resources.exit3;
+            this.btLogout.Location = new System.Drawing.Point(413, 495);
+            this.btLogout.Name = "btLogout";
+            this.btLogout.Size = new System.Drawing.Size(442, 72);
+            this.btLogout.TabIndex = 10;
+            this.btLogout.Text = "ออกจากระบบ";
+            this.btLogout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btLogout.UseVisualStyleBackColor = false;
+            this.btLogout.Click += new System.EventHandler(this.btLogout_Click);
             // 
-            // BTCancel
+            // btCancel
             // 
-            this.BTCancel.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTCancel.Image = global::DTIWinformProject.Properties.Resources.cancel;
-            this.BTCancel.Location = new System.Drawing.Point(647, 400);
-            this.BTCancel.Name = "BTCancel";
-            this.BTCancel.Size = new System.Drawing.Size(208, 72);
-            this.BTCancel.TabIndex = 9;
-            this.BTCancel.Text = "ยกเลิก";
-            this.BTCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTCancel.UseVisualStyleBackColor = false;
+            this.btCancel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCancel.Image = global::DTIWinformProject.Properties.Resources.cancel;
+            this.btCancel.Location = new System.Drawing.Point(647, 400);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.Size = new System.Drawing.Size(208, 72);
+            this.btCancel.TabIndex = 9;
+            this.btCancel.Text = "ยกเลิก";
+            this.btCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btCancel.UseVisualStyleBackColor = false;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
-            // BTLogin
+            // btLogin
             // 
-            this.BTLogin.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTLogin.Image = global::DTIWinformProject.Properties.Resources.start;
-            this.BTLogin.Location = new System.Drawing.Point(413, 400);
-            this.BTLogin.Name = "BTLogin";
-            this.BTLogin.Size = new System.Drawing.Size(208, 72);
-            this.BTLogin.TabIndex = 8;
-            this.BTLogin.Text = "เข้าใช้งานระบบ";
-            this.BTLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTLogin.UseVisualStyleBackColor = false;
+            this.btLogin.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLogin.Image = global::DTIWinformProject.Properties.Resources.start;
+            this.btLogin.Location = new System.Drawing.Point(413, 400);
+            this.btLogin.Name = "btLogin";
+            this.btLogin.Size = new System.Drawing.Size(208, 72);
+            this.btLogin.TabIndex = 8;
+            this.btLogin.Text = "เข้าใช้งานระบบ";
+            this.btLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btLogin.UseVisualStyleBackColor = false;
+            this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
             // pictureBox1
             // 
@@ -182,14 +184,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1014, 651);
-            this.Controls.Add(this.BTLogout);
-            this.Controls.Add(this.BTCancel);
-            this.Controls.Add(this.BTLogin);
-            this.Controls.Add(this.radioTeacher);
-            this.Controls.Add(this.radioStudent);
+            this.Controls.Add(this.btLogout);
+            this.Controls.Add(this.btCancel);
+            this.Controls.Add(this.btLogin);
+            this.Controls.Add(this.rdTeacher);
+            this.Controls.Add(this.rdStudent);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.TFPassword);
-            this.Controls.Add(this.TFUsername);
+            this.Controls.Add(this.tbPassword);
+            this.Controls.Add(this.tbUsername);
             this.Controls.Add(this.TextPassword);
             this.Controls.Add(this.TextUser);
             this.Controls.Add(this.HeadLabel);
@@ -211,15 +213,15 @@
         private System.Windows.Forms.Label HeadLabel;
         private System.Windows.Forms.Label TextUser;
         private System.Windows.Forms.Label TextPassword;
-        private System.Windows.Forms.TextBox TFUsername;
-        private System.Windows.Forms.TextBox TFPassword;
+        private System.Windows.Forms.TextBox tbUsername;
+        private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.RadioButton radioStudent;
-        private System.Windows.Forms.RadioButton radioTeacher;
-        private System.Windows.Forms.Button BTLogin;
-        private System.Windows.Forms.Button BTCancel;
+        private System.Windows.Forms.RadioButton rdStudent;
+        private System.Windows.Forms.RadioButton rdTeacher;
+        private System.Windows.Forms.Button btLogin;
+        private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.Button BTLogout;
+        private System.Windows.Forms.Button btLogout;
     }
 }
 

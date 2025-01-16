@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCalculator));
             this.HeadLabel = new System.Windows.Forms.Label();
-            this.TFNum1 = new System.Windows.Forms.TextBox();
+            this.tbNum1 = new System.Windows.Forms.TextBox();
             this.TextNum1 = new System.Windows.Forms.Label();
-            this.TFNum2 = new System.Windows.Forms.TextBox();
+            this.tbNum2 = new System.Windows.Forms.TextBox();
             this.TextNum2 = new System.Windows.Forms.Label();
-            this.BTplus = new System.Windows.Forms.Button();
-            this.BTลบ = new System.Windows.Forms.Button();
-            this.BTMultiply = new System.Windows.Forms.Button();
-            this.BTdivide = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btPlus = new System.Windows.Forms.Button();
+            this.btMinus = new System.Windows.Forms.Button();
+            this.btMultiply = new System.Windows.Forms.Button();
+            this.btDivide = new System.Windows.Forms.Button();
+            this.btSquared = new System.Windows.Forms.Button();
+            this.lbResult = new System.Windows.Forms.Label();
             this.LabelResult = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.BTMainMenu = new System.Windows.Forms.Button();
+            this.cbb = new System.Windows.Forms.ComboBox();
+            this.btMainMenu = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,13 +62,13 @@
             this.HeadLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.HeadLabel.Click += new System.EventHandler(this.HeadLabel_Click);
             // 
-            // TFNum1
+            // tbNum1
             // 
-            this.TFNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TFNum1.Location = new System.Drawing.Point(235, 144);
-            this.TFNum1.Name = "TFNum1";
-            this.TFNum1.Size = new System.Drawing.Size(442, 34);
-            this.TFNum1.TabIndex = 6;
+            this.tbNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNum1.Location = new System.Drawing.Point(235, 144);
+            this.tbNum1.Name = "tbNum1";
+            this.tbNum1.Size = new System.Drawing.Size(442, 34);
+            this.tbNum1.TabIndex = 6;
             // 
             // TextNum1
             // 
@@ -81,13 +81,13 @@
             this.TextNum1.Text = "ป้อนตัวเลข :";
             this.TextNum1.Click += new System.EventHandler(this.TextUser_Click);
             // 
-            // TFNum2
+            // tbNum2
             // 
-            this.TFNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TFNum2.Location = new System.Drawing.Point(235, 226);
-            this.TFNum2.Name = "TFNum2";
-            this.TFNum2.Size = new System.Drawing.Size(442, 34);
-            this.TFNum2.TabIndex = 8;
+            this.tbNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNum2.Location = new System.Drawing.Point(235, 226);
+            this.tbNum2.Name = "tbNum2";
+            this.tbNum2.Size = new System.Drawing.Size(442, 34);
+            this.tbNum2.TabIndex = 8;
             // 
             // TextNum2
             // 
@@ -99,77 +99,77 @@
             this.TextNum2.TabIndex = 7;
             this.TextNum2.Text = "ป้อนตัวเลข :";
             // 
-            // BTplus
+            // btPlus
             // 
-            this.BTplus.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTplus.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTplus.ForeColor = System.Drawing.Color.Blue;
-            this.BTplus.Location = new System.Drawing.Point(83, 303);
-            this.BTplus.Name = "BTplus";
-            this.BTplus.Size = new System.Drawing.Size(99, 87);
-            this.BTplus.TabIndex = 9;
-            this.BTplus.Text = "+";
-            this.BTplus.UseVisualStyleBackColor = false;
+            this.btPlus.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPlus.ForeColor = System.Drawing.Color.Blue;
+            this.btPlus.Location = new System.Drawing.Point(83, 303);
+            this.btPlus.Name = "btPlus";
+            this.btPlus.Size = new System.Drawing.Size(99, 87);
+            this.btPlus.TabIndex = 9;
+            this.btPlus.Text = "+";
+            this.btPlus.UseVisualStyleBackColor = false;
             // 
-            // BTลบ
+            // btMinus
             // 
-            this.BTลบ.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTลบ.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTลบ.ForeColor = System.Drawing.Color.Blue;
-            this.BTลบ.Location = new System.Drawing.Point(223, 303);
-            this.BTลบ.Name = "BTลบ";
-            this.BTลบ.Size = new System.Drawing.Size(99, 87);
-            this.BTลบ.TabIndex = 10;
-            this.BTลบ.Text = "-";
-            this.BTลบ.UseVisualStyleBackColor = false;
+            this.btMinus.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMinus.ForeColor = System.Drawing.Color.Blue;
+            this.btMinus.Location = new System.Drawing.Point(223, 303);
+            this.btMinus.Name = "btMinus";
+            this.btMinus.Size = new System.Drawing.Size(99, 87);
+            this.btMinus.TabIndex = 10;
+            this.btMinus.Text = "-";
+            this.btMinus.UseVisualStyleBackColor = false;
             // 
-            // BTMultiply
+            // btMultiply
             // 
-            this.BTMultiply.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTMultiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTMultiply.ForeColor = System.Drawing.Color.Blue;
-            this.BTMultiply.Location = new System.Drawing.Point(367, 303);
-            this.BTMultiply.Name = "BTMultiply";
-            this.BTMultiply.Size = new System.Drawing.Size(99, 87);
-            this.BTMultiply.TabIndex = 11;
-            this.BTMultiply.Text = "x";
-            this.BTMultiply.UseVisualStyleBackColor = false;
+            this.btMultiply.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btMultiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMultiply.ForeColor = System.Drawing.Color.Blue;
+            this.btMultiply.Location = new System.Drawing.Point(367, 303);
+            this.btMultiply.Name = "btMultiply";
+            this.btMultiply.Size = new System.Drawing.Size(99, 87);
+            this.btMultiply.TabIndex = 11;
+            this.btMultiply.Text = "x";
+            this.btMultiply.UseVisualStyleBackColor = false;
             // 
-            // BTdivide
+            // btDivide
             // 
-            this.BTdivide.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTdivide.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTdivide.ForeColor = System.Drawing.Color.Blue;
-            this.BTdivide.Location = new System.Drawing.Point(515, 303);
-            this.BTdivide.Name = "BTdivide";
-            this.BTdivide.Size = new System.Drawing.Size(99, 87);
-            this.BTdivide.TabIndex = 12;
-            this.BTdivide.Text = "÷";
-            this.BTdivide.UseVisualStyleBackColor = false;
+            this.btDivide.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btDivide.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDivide.ForeColor = System.Drawing.Color.Blue;
+            this.btDivide.Location = new System.Drawing.Point(515, 303);
+            this.btDivide.Name = "btDivide";
+            this.btDivide.Size = new System.Drawing.Size(99, 87);
+            this.btDivide.TabIndex = 12;
+            this.btDivide.Text = "÷";
+            this.btDivide.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btSquared
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Location = new System.Drawing.Point(672, 303);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 87);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "^";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btSquared.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btSquared.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSquared.ForeColor = System.Drawing.Color.Blue;
+            this.btSquared.Location = new System.Drawing.Point(672, 303);
+            this.btSquared.Name = "btSquared";
+            this.btSquared.Size = new System.Drawing.Size(99, 87);
+            this.btSquared.TabIndex = 13;
+            this.btSquared.Text = "^";
+            this.btSquared.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // lbResult
             // 
-            this.label1.BackColor = System.Drawing.Color.Yellow;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(235, 483);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(458, 103);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "?????";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbResult.BackColor = System.Drawing.Color.Yellow;
+            this.lbResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbResult.ForeColor = System.Drawing.Color.Red;
+            this.lbResult.Location = new System.Drawing.Point(235, 483);
+            this.lbResult.Name = "lbResult";
+            this.lbResult.Size = new System.Drawing.Size(458, 103);
+            this.lbResult.TabIndex = 14;
+            this.lbResult.Text = "?????";
+            this.lbResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelResult
             // 
@@ -188,9 +188,9 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.toolStripLabel2});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 620);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 626);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1014, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(1014, 25);
             this.toolStrip1.TabIndex = 16;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -198,61 +198,61 @@
             // 
             this.toolStripLabel1.ForeColor = System.Drawing.Color.Blue;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(53, 28);
+            this.toolStripLabel1.Size = new System.Drawing.Size(53, 22);
             this.toolStripLabel1.Text = "name?";
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(76, 28);
+            this.toolStripLabel2.Size = new System.Drawing.Size(76, 22);
             this.toolStripLabel2.Text = "datetime?";
             // 
-            // comboBox1
+            // cbb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbb.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb.FormattingEnabled = true;
+            this.cbb.Items.AddRange(new object[] {
             "ทศนิยม 2 ตำแหน่ง",
             "ทศนิยม 4 ตำแหน่ง",
             "ทศนิยม 8 ตำแหน่ง"});
-            this.comboBox1.Location = new System.Drawing.Point(329, 418);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(213, 39);
-            this.comboBox1.TabIndex = 17;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbb.Location = new System.Drawing.Point(329, 418);
+            this.cbb.Name = "cbb";
+            this.cbb.Size = new System.Drawing.Size(213, 39);
+            this.cbb.TabIndex = 17;
+            this.cbb.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // BTMainMenu
+            // btMainMenu
             // 
-            this.BTMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
-            this.BTMainMenu.Location = new System.Drawing.Point(784, 9);
-            this.BTMainMenu.Name = "BTMainMenu";
-            this.BTMainMenu.Size = new System.Drawing.Size(160, 103);
-            this.BTMainMenu.TabIndex = 4;
-            this.BTMainMenu.Text = "หน้าจอหลัก";
-            this.BTMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BTMainMenu.UseVisualStyleBackColor = false;
+            this.btMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
+            this.btMainMenu.Location = new System.Drawing.Point(784, 9);
+            this.btMainMenu.Name = "btMainMenu";
+            this.btMainMenu.Size = new System.Drawing.Size(160, 103);
+            this.btMainMenu.TabIndex = 4;
+            this.btMainMenu.Text = "หน้าจอหลัก";
+            this.btMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btMainMenu.UseVisualStyleBackColor = false;
             // 
             // FrmCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1014, 651);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbb);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.LabelResult);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.BTdivide);
-            this.Controls.Add(this.BTMultiply);
-            this.Controls.Add(this.BTลบ);
-            this.Controls.Add(this.BTplus);
-            this.Controls.Add(this.TFNum2);
+            this.Controls.Add(this.lbResult);
+            this.Controls.Add(this.btSquared);
+            this.Controls.Add(this.btDivide);
+            this.Controls.Add(this.btMultiply);
+            this.Controls.Add(this.btMinus);
+            this.Controls.Add(this.btPlus);
+            this.Controls.Add(this.tbNum2);
             this.Controls.Add(this.TextNum2);
-            this.Controls.Add(this.TFNum1);
+            this.Controls.Add(this.tbNum1);
             this.Controls.Add(this.TextNum1);
-            this.Controls.Add(this.BTMainMenu);
+            this.Controls.Add(this.btMainMenu);
             this.Controls.Add(this.HeadLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -269,21 +269,21 @@
         #endregion
 
         private System.Windows.Forms.Label HeadLabel;
-        private System.Windows.Forms.Button BTMainMenu;
-        private System.Windows.Forms.TextBox TFNum1;
+        private System.Windows.Forms.Button btMainMenu;
+        private System.Windows.Forms.TextBox tbNum1;
         private System.Windows.Forms.Label TextNum1;
-        private System.Windows.Forms.TextBox TFNum2;
+        private System.Windows.Forms.TextBox tbNum2;
         private System.Windows.Forms.Label TextNum2;
-        private System.Windows.Forms.Button BTplus;
-        private System.Windows.Forms.Button BTลบ;
-        private System.Windows.Forms.Button BTMultiply;
-        private System.Windows.Forms.Button BTdivide;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btPlus;
+        private System.Windows.Forms.Button btMinus;
+        private System.Windows.Forms.Button btMultiply;
+        private System.Windows.Forms.Button btDivide;
+        private System.Windows.Forms.Button btSquared;
+        private System.Windows.Forms.Label lbResult;
         private System.Windows.Forms.Label LabelResult;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbb;
     }
 }

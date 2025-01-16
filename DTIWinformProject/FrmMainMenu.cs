@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DTIWinformProject
 {
-    public partial class หน้าจอหลัก : Form
+    public partial class FrmMainMenu : Form
     {
-        public หน้าจอหลัก()
+        public FrmMainMenu()
         {
             InitializeComponent();
         }

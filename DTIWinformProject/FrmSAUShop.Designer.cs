@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSAUShop));
             this.HeadLabel = new System.Windows.Forms.Label();
-            this.checkBoxPen = new System.Windows.Forms.CheckBox();
+            this.cbPen = new System.Windows.Forms.CheckBox();
             this.labelProductList = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -74,34 +74,32 @@
             this.HeadLabel.BackColor = System.Drawing.Color.Yellow;
             this.HeadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HeadLabel.ForeColor = System.Drawing.Color.Blue;
-            this.HeadLabel.Location = new System.Drawing.Point(34, 7);
-            this.HeadLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.HeadLabel.Location = new System.Drawing.Point(45, 9);
             this.HeadLabel.Name = "HeadLabel";
-            this.HeadLabel.Size = new System.Drawing.Size(466, 84);
+            this.HeadLabel.Size = new System.Drawing.Size(621, 103);
             this.HeadLabel.TabIndex = 4;
             this.HeadLabel.Text = "SAU Shop";
             this.HeadLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // checkBoxPen
+            // cbPen
             // 
-            this.checkBoxPen.AutoSize = true;
-            this.checkBoxPen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxPen.Location = new System.Drawing.Point(46, 157);
-            this.checkBoxPen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.checkBoxPen.Name = "checkBoxPen";
-            this.checkBoxPen.Size = new System.Drawing.Size(150, 24);
-            this.checkBoxPen.TabIndex = 6;
-            this.checkBoxPen.Text = "ปากกา 5 บาท / ด้าม";
-            this.checkBoxPen.UseVisualStyleBackColor = true;
+            this.cbPen.AutoSize = true;
+            this.cbPen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPen.Location = new System.Drawing.Point(61, 193);
+            this.cbPen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbPen.Name = "cbPen";
+            this.cbPen.Size = new System.Drawing.Size(179, 29);
+            this.cbPen.TabIndex = 6;
+            this.cbPen.Text = "ปากกา 5 บาท / ด้าม";
+            this.cbPen.UseVisualStyleBackColor = true;
             // 
             // labelProductList
             // 
             this.labelProductList.AutoSize = true;
             this.labelProductList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelProductList.Location = new System.Drawing.Point(85, 114);
-            this.labelProductList.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelProductList.Location = new System.Drawing.Point(113, 140);
             this.labelProductList.Name = "labelProductList";
-            this.labelProductList.Size = new System.Drawing.Size(97, 20);
+            this.labelProductList.Size = new System.Drawing.Size(115, 25);
             this.labelProductList.TabIndex = 7;
             this.labelProductList.Text = "รายการสินค้า";
             // 
@@ -112,11 +110,11 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(80, 401);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(107, 494);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(603, 83);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(804, 102);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -126,10 +124,10 @@
             this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::DTIWinformProject.Properties.Resources.cancel;
-            this.button1.Location = new System.Drawing.Point(448, 12);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(597, 15);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 64);
+            this.button1.Size = new System.Drawing.Size(125, 79);
             this.button1.TabIndex = 32;
             this.button1.Text = "ยกเลิก";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -140,10 +138,10 @@
             this.BTCalculate.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BTCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTCalculate.Image = global::DTIWinformProject.Properties.Resources.calculator2;
-            this.BTCalculate.Location = new System.Drawing.Point(326, 12);
-            this.BTCalculate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTCalculate.Location = new System.Drawing.Point(435, 15);
+            this.BTCalculate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BTCalculate.Name = "BTCalculate";
-            this.BTCalculate.Size = new System.Drawing.Size(94, 64);
+            this.BTCalculate.Size = new System.Drawing.Size(125, 79);
             this.BTCalculate.TabIndex = 33;
             this.BTCalculate.Text = "คำนวณ";
             this.BTCalculate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -153,10 +151,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(278, 33);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(371, 41);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 20);
+            this.label3.Size = new System.Drawing.Size(46, 25);
             this.label3.TabIndex = 32;
             this.label3.Text = "บาท";
             // 
@@ -164,10 +161,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 33);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(13, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 20);
+            this.label2.Size = new System.Drawing.Size(147, 25);
             this.label2.TabIndex = 32;
             this.label2.Text = "รวมเป็นเงินทั้งสิ้น";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
@@ -177,10 +173,9 @@
             this.label1.BackColor = System.Drawing.Color.Yellow;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(147, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(196, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 53);
+            this.label1.Size = new System.Drawing.Size(140, 65);
             this.label1.TabIndex = 32;
             this.label1.Text = "0.00";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -189,10 +184,9 @@
             // 
             this.labelTotalPrice.AutoSize = true;
             this.labelTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalPrice.Location = new System.Drawing.Point(379, 114);
-            this.labelTotalPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTotalPrice.Location = new System.Drawing.Point(505, 140);
             this.labelTotalPrice.Name = "labelTotalPrice";
-            this.labelTotalPrice.Size = new System.Drawing.Size(81, 20);
+            this.labelTotalPrice.Size = new System.Drawing.Size(96, 25);
             this.labelTotalPrice.TabIndex = 9;
             this.labelTotalPrice.Text = "คิดเป็นเงิน";
             // 
@@ -200,19 +194,18 @@
             // 
             this.labelQuantity.AutoSize = true;
             this.labelQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuantity.Location = new System.Drawing.Point(250, 114);
-            this.labelQuantity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelQuantity.Location = new System.Drawing.Point(333, 140);
             this.labelQuantity.Name = "labelQuantity";
-            this.labelQuantity.Size = new System.Drawing.Size(54, 20);
+            this.labelQuantity.Size = new System.Drawing.Size(68, 25);
             this.labelQuantity.TabIndex = 10;
             this.labelQuantity.Text = "จำนวน";
             // 
             // TBPen
             // 
-            this.TBPen.Location = new System.Drawing.Point(227, 162);
-            this.TBPen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TBPen.Location = new System.Drawing.Point(303, 199);
+            this.TBPen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TBPen.Name = "TBPen";
-            this.TBPen.Size = new System.Drawing.Size(97, 20);
+            this.TBPen.Size = new System.Drawing.Size(128, 22);
             this.TBPen.TabIndex = 11;
             // 
             // labelTotalPen
@@ -220,10 +213,9 @@
             this.labelTotalPen.BackColor = System.Drawing.Color.Yellow;
             this.labelTotalPen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalPen.ForeColor = System.Drawing.Color.Red;
-            this.labelTotalPen.Location = new System.Drawing.Point(370, 157);
-            this.labelTotalPen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTotalPen.Location = new System.Drawing.Point(493, 193);
             this.labelTotalPen.Name = "labelTotalPen";
-            this.labelTotalPen.Size = new System.Drawing.Size(94, 25);
+            this.labelTotalPen.Size = new System.Drawing.Size(125, 31);
             this.labelTotalPen.TabIndex = 12;
             this.labelTotalPen.Text = "0.00";
             this.labelTotalPen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -232,10 +224,9 @@
             // 
             this.labelBaht1.AutoSize = true;
             this.labelBaht1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBaht1.Location = new System.Drawing.Point(510, 159);
-            this.labelBaht1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelBaht1.Location = new System.Drawing.Point(680, 196);
             this.labelBaht1.Name = "labelBaht1";
-            this.labelBaht1.Size = new System.Drawing.Size(35, 20);
+            this.labelBaht1.Size = new System.Drawing.Size(43, 25);
             this.labelBaht1.TabIndex = 13;
             this.labelBaht1.Text = "บาท";
             this.labelBaht1.Click += new System.EventHandler(this.label2_Click);
@@ -244,10 +235,9 @@
             // 
             this.labelBaht3.AutoSize = true;
             this.labelBaht3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBaht3.Location = new System.Drawing.Point(510, 246);
-            this.labelBaht3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelBaht3.Location = new System.Drawing.Point(680, 303);
             this.labelBaht3.Name = "labelBaht3";
-            this.labelBaht3.Size = new System.Drawing.Size(35, 20);
+            this.labelBaht3.Size = new System.Drawing.Size(43, 25);
             this.labelBaht3.TabIndex = 17;
             this.labelBaht3.Text = "บาท";
             // 
@@ -256,30 +246,29 @@
             this.labelTotalEraser.BackColor = System.Drawing.Color.Yellow;
             this.labelTotalEraser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalEraser.ForeColor = System.Drawing.Color.Red;
-            this.labelTotalEraser.Location = new System.Drawing.Point(370, 244);
-            this.labelTotalEraser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTotalEraser.Location = new System.Drawing.Point(493, 300);
             this.labelTotalEraser.Name = "labelTotalEraser";
-            this.labelTotalEraser.Size = new System.Drawing.Size(94, 25);
+            this.labelTotalEraser.Size = new System.Drawing.Size(125, 31);
             this.labelTotalEraser.TabIndex = 16;
             this.labelTotalEraser.Text = "0.00";
             this.labelTotalEraser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TBEraser
             // 
-            this.TBEraser.Location = new System.Drawing.Point(227, 248);
-            this.TBEraser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TBEraser.Location = new System.Drawing.Point(303, 305);
+            this.TBEraser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TBEraser.Name = "TBEraser";
-            this.TBEraser.Size = new System.Drawing.Size(97, 20);
+            this.TBEraser.Size = new System.Drawing.Size(128, 22);
             this.TBEraser.TabIndex = 15;
             // 
             // checkBoxEraser
             // 
             this.checkBoxEraser.AutoSize = true;
             this.checkBoxEraser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxEraser.Location = new System.Drawing.Point(46, 244);
-            this.checkBoxEraser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxEraser.Location = new System.Drawing.Point(61, 300);
+            this.checkBoxEraser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBoxEraser.Name = "checkBoxEraser";
-            this.checkBoxEraser.Size = new System.Drawing.Size(170, 24);
+            this.checkBoxEraser.Size = new System.Drawing.Size(206, 29);
             this.checkBoxEraser.TabIndex = 14;
             this.checkBoxEraser.Text = "ยางลบ 2.50 บาท / ก้อน";
             this.checkBoxEraser.UseVisualStyleBackColor = true;
@@ -288,10 +277,9 @@
             // 
             this.labelBaht2.AutoSize = true;
             this.labelBaht2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBaht2.Location = new System.Drawing.Point(510, 202);
-            this.labelBaht2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelBaht2.Location = new System.Drawing.Point(680, 249);
             this.labelBaht2.Name = "labelBaht2";
-            this.labelBaht2.Size = new System.Drawing.Size(35, 20);
+            this.labelBaht2.Size = new System.Drawing.Size(43, 25);
             this.labelBaht2.TabIndex = 21;
             this.labelBaht2.Text = "บาท";
             // 
@@ -300,30 +288,29 @@
             this.labelTotalPencil.BackColor = System.Drawing.Color.Yellow;
             this.labelTotalPencil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalPencil.ForeColor = System.Drawing.Color.Red;
-            this.labelTotalPencil.Location = new System.Drawing.Point(370, 199);
-            this.labelTotalPencil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTotalPencil.Location = new System.Drawing.Point(493, 245);
             this.labelTotalPencil.Name = "labelTotalPencil";
-            this.labelTotalPencil.Size = new System.Drawing.Size(94, 25);
+            this.labelTotalPencil.Size = new System.Drawing.Size(125, 31);
             this.labelTotalPencil.TabIndex = 20;
             this.labelTotalPencil.Text = "0.00";
             this.labelTotalPencil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TBPencil
             // 
-            this.TBPencil.Location = new System.Drawing.Point(227, 205);
-            this.TBPencil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TBPencil.Location = new System.Drawing.Point(303, 252);
+            this.TBPencil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TBPencil.Name = "TBPencil";
-            this.TBPencil.Size = new System.Drawing.Size(97, 20);
+            this.TBPencil.Size = new System.Drawing.Size(128, 22);
             this.TBPencil.TabIndex = 19;
             // 
             // checkBoxPencil
             // 
             this.checkBoxPencil.AutoSize = true;
             this.checkBoxPencil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxPencil.Location = new System.Drawing.Point(46, 199);
-            this.checkBoxPencil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxPencil.Location = new System.Drawing.Point(61, 245);
+            this.checkBoxPencil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBoxPencil.Name = "checkBoxPencil";
-            this.checkBoxPencil.Size = new System.Drawing.Size(165, 24);
+            this.checkBoxPencil.Size = new System.Drawing.Size(201, 29);
             this.checkBoxPencil.TabIndex = 18;
             this.checkBoxPencil.Text = "ดินสอ 1.50 บาท / ด้าม";
             this.checkBoxPencil.UseVisualStyleBackColor = true;
@@ -332,10 +319,9 @@
             // 
             this.labelBaht4.AutoSize = true;
             this.labelBaht4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBaht4.Location = new System.Drawing.Point(510, 288);
-            this.labelBaht4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelBaht4.Location = new System.Drawing.Point(680, 354);
             this.labelBaht4.Name = "labelBaht4";
-            this.labelBaht4.Size = new System.Drawing.Size(35, 20);
+            this.labelBaht4.Size = new System.Drawing.Size(43, 25);
             this.labelBaht4.TabIndex = 25;
             this.labelBaht4.Text = "บาท";
             // 
@@ -344,30 +330,29 @@
             this.labelTotalRuler.BackColor = System.Drawing.Color.Yellow;
             this.labelTotalRuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalRuler.ForeColor = System.Drawing.Color.Red;
-            this.labelTotalRuler.Location = new System.Drawing.Point(370, 285);
-            this.labelTotalRuler.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTotalRuler.Location = new System.Drawing.Point(493, 351);
             this.labelTotalRuler.Name = "labelTotalRuler";
-            this.labelTotalRuler.Size = new System.Drawing.Size(94, 25);
+            this.labelTotalRuler.Size = new System.Drawing.Size(125, 31);
             this.labelTotalRuler.TabIndex = 24;
             this.labelTotalRuler.Text = "0.00";
             this.labelTotalRuler.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TBRuler
             // 
-            this.TBRuler.Location = new System.Drawing.Point(227, 289);
-            this.TBRuler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TBRuler.Location = new System.Drawing.Point(303, 356);
+            this.TBRuler.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TBRuler.Name = "TBRuler";
-            this.TBRuler.Size = new System.Drawing.Size(97, 20);
+            this.TBRuler.Size = new System.Drawing.Size(128, 22);
             this.TBRuler.TabIndex = 23;
             // 
             // checkBoxRuler
             // 
             this.checkBoxRuler.AutoSize = true;
             this.checkBoxRuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxRuler.Location = new System.Drawing.Point(46, 285);
-            this.checkBoxRuler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxRuler.Location = new System.Drawing.Point(61, 351);
+            this.checkBoxRuler.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBoxRuler.Name = "checkBoxRuler";
-            this.checkBoxRuler.Size = new System.Drawing.Size(159, 24);
+            this.checkBoxRuler.Size = new System.Drawing.Size(194, 29);
             this.checkBoxRuler.TabIndex = 22;
             this.checkBoxRuler.Text = "ไม้บรรทัด 2 บาท / อัน";
             this.checkBoxRuler.UseVisualStyleBackColor = true;
@@ -376,10 +361,9 @@
             // 
             this.labelBaht5.AutoSize = true;
             this.labelBaht5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBaht5.Location = new System.Drawing.Point(510, 328);
-            this.labelBaht5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelBaht5.Location = new System.Drawing.Point(680, 404);
             this.labelBaht5.Name = "labelBaht5";
-            this.labelBaht5.Size = new System.Drawing.Size(35, 20);
+            this.labelBaht5.Size = new System.Drawing.Size(43, 25);
             this.labelBaht5.TabIndex = 29;
             this.labelBaht5.Text = "บาท";
             // 
@@ -388,30 +372,29 @@
             this.labelTotalNbook.BackColor = System.Drawing.Color.Yellow;
             this.labelTotalNbook.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalNbook.ForeColor = System.Drawing.Color.Red;
-            this.labelTotalNbook.Location = new System.Drawing.Point(370, 329);
-            this.labelTotalNbook.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTotalNbook.Location = new System.Drawing.Point(493, 405);
             this.labelTotalNbook.Name = "labelTotalNbook";
-            this.labelTotalNbook.Size = new System.Drawing.Size(94, 25);
+            this.labelTotalNbook.Size = new System.Drawing.Size(125, 31);
             this.labelTotalNbook.TabIndex = 28;
             this.labelTotalNbook.Text = "0.00";
             this.labelTotalNbook.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TBNbook
             // 
-            this.TBNbook.Location = new System.Drawing.Point(227, 332);
-            this.TBNbook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TBNbook.Location = new System.Drawing.Point(303, 409);
+            this.TBNbook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TBNbook.Name = "TBNbook";
-            this.TBNbook.Size = new System.Drawing.Size(97, 20);
+            this.TBNbook.Size = new System.Drawing.Size(128, 22);
             this.TBNbook.TabIndex = 27;
             // 
             // checkBoxNbook
             // 
             this.checkBoxNbook.AutoSize = true;
             this.checkBoxNbook.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxNbook.Location = new System.Drawing.Point(46, 328);
-            this.checkBoxNbook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxNbook.Location = new System.Drawing.Point(61, 404);
+            this.checkBoxNbook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBoxNbook.Name = "checkBoxNbook";
-            this.checkBoxNbook.Size = new System.Drawing.Size(165, 24);
+            this.checkBoxNbook.Size = new System.Drawing.Size(196, 29);
             this.checkBoxNbook.TabIndex = 26;
             this.checkBoxNbook.Text = "สมุด 10.25 บาท / เล่ม";
             this.checkBoxNbook.UseVisualStyleBackColor = true;
@@ -420,10 +403,9 @@
             // 
             this.labelDiscount.AutoSize = true;
             this.labelDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDiscount.Location = new System.Drawing.Point(100, 369);
-            this.labelDiscount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDiscount.Location = new System.Drawing.Point(133, 454);
             this.labelDiscount.Name = "labelDiscount";
-            this.labelDiscount.Size = new System.Drawing.Size(55, 20);
+            this.labelDiscount.Size = new System.Drawing.Size(67, 25);
             this.labelDiscount.TabIndex = 30;
             this.labelDiscount.Text = "ส่วนลด";
             this.labelDiscount.Click += new System.EventHandler(this.labelDiscount_Click);
@@ -435,10 +417,10 @@
             "5 %",
             "10 %",
             "15 %"});
-            this.comboBox1.Location = new System.Drawing.Point(213, 369);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Location = new System.Drawing.Point(284, 454);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(123, 21);
+            this.comboBox1.Size = new System.Drawing.Size(163, 24);
             this.comboBox1.TabIndex = 31;
             // 
             // BTMainMenu
@@ -446,10 +428,10 @@
             this.BTMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BTMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
-            this.BTMainMenu.Location = new System.Drawing.Point(579, 7);
-            this.BTMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTMainMenu.Location = new System.Drawing.Point(772, 9);
+            this.BTMainMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BTMainMenu.Name = "BTMainMenu";
-            this.BTMainMenu.Size = new System.Drawing.Size(120, 84);
+            this.BTMainMenu.Size = new System.Drawing.Size(160, 103);
             this.BTMainMenu.TabIndex = 5;
             this.BTMainMenu.Text = "หน้าจอหลัก";
             this.BTMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -462,9 +444,9 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.toolStripLabel2});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 504);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 626);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(760, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1013, 25);
             this.toolStrip1.TabIndex = 32;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -472,20 +454,20 @@
             // 
             this.toolStripLabel1.ForeColor = System.Drawing.Color.Blue;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(42, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(53, 22);
             this.toolStripLabel1.Text = "name?";
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(59, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(76, 22);
             this.toolStripLabel2.Text = "datetime?";
             // 
             // FrmSAUShop
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 529);
+            this.ClientSize = new System.Drawing.Size(1013, 651);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.labelDiscount);
@@ -512,12 +494,12 @@
             this.Controls.Add(this.labelTotalPrice);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.labelProductList);
-            this.Controls.Add(this.checkBoxPen);
+            this.Controls.Add(this.cbPen);
             this.Controls.Add(this.BTMainMenu);
             this.Controls.Add(this.HeadLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FrmSAUShop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -536,7 +518,7 @@
 
         private System.Windows.Forms.Label HeadLabel;
         private System.Windows.Forms.Button BTMainMenu;
-        private System.Windows.Forms.CheckBox checkBoxPen;
+        private System.Windows.Forms.CheckBox cbPen;
         private System.Windows.Forms.Label labelProductList;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label labelTotalPrice;
