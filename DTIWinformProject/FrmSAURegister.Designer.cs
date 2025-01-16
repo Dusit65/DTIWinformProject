@@ -287,7 +287,7 @@
             // 
             this.radioSpecial.AutoSize = true;
             this.radioSpecial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioSpecial.Location = new System.Drawing.Point(547, 331);
+            this.radioSpecial.Location = new System.Drawing.Point(549, 331);
             this.radioSpecial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioSpecial.Name = "radioSpecial";
             this.radioSpecial.Size = new System.Drawing.Size(87, 24);
