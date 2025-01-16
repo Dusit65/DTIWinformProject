@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDooDuang));
             this.groupPrivateInfo = new System.Windows.Forms.GroupBox();
             this.labelHu = new System.Windows.Forms.Label();
@@ -44,15 +45,15 @@
             this.LabelidCard = new System.Windows.Forms.Label();
             this.HeadLabel = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.tslbUsername = new System.Windows.Forms.ToolStripLabel();
+            this.tslbDateTime = new System.Windows.Forms.ToolStripLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BTendProgram = new System.Windows.Forms.Button();
             this.BTFind = new System.Windows.Forms.Button();
             this.BTNew = new System.Windows.Forms.Button();
-            this.BTMainMenu = new System.Windows.Forms.Button();
+            this.btMainMenu = new System.Windows.Forms.Button();
             this.groupResult = new System.Windows.Forms.GroupBox();
             this.labelRHeight = new System.Windows.Forms.Label();
             this.labelRWeight = new System.Windows.Forms.Label();
@@ -67,6 +68,7 @@
             this.LabelBirthDate2 = new System.Windows.Forms.Label();
             this.labelFullname = new System.Windows.Forms.Label();
             this.labelid2 = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.groupPrivateInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownW)).BeginInit();
@@ -125,7 +127,7 @@
             this.numericUpDownH.DecimalPlaces = 2;
             this.numericUpDownH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownH.Location = new System.Drawing.Point(137, 250);
-            this.numericUpDownH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownH.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownH.Name = "numericUpDownH";
             this.numericUpDownH.Size = new System.Drawing.Size(160, 26);
             this.numericUpDownH.TabIndex = 25;
@@ -135,7 +137,7 @@
             this.numericUpDownW.DecimalPlaces = 2;
             this.numericUpDownW.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownW.Location = new System.Drawing.Point(137, 208);
-            this.numericUpDownW.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownW.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownW.Name = "numericUpDownW";
             this.numericUpDownW.Size = new System.Drawing.Size(160, 26);
             this.numericUpDownW.TabIndex = 24;
@@ -202,7 +204,7 @@
             // 
             this.maskedID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedID.Location = new System.Drawing.Point(137, 41);
-            this.maskedID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.maskedID.Margin = new System.Windows.Forms.Padding(4);
             this.maskedID.Mask = "_-____-_____-__-_";
             this.maskedID.Name = "maskedID";
             this.maskedID.Size = new System.Drawing.Size(297, 26);
@@ -235,35 +237,35 @@
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.toolStripLabel2});
+            this.tslbUsername,
+            this.tslbDateTime});
             this.toolStrip1.Location = new System.Drawing.Point(0, 647);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1297, 25);
             this.toolStrip1.TabIndex = 44;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripLabel1
+            // tslbUsername
             // 
-            this.toolStripLabel1.ForeColor = System.Drawing.Color.Blue;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(53, 22);
-            this.toolStripLabel1.Text = "name?";
+            this.tslbUsername.ForeColor = System.Drawing.Color.Blue;
+            this.tslbUsername.Name = "tslbUsername";
+            this.tslbUsername.Size = new System.Drawing.Size(53, 22);
+            this.tslbUsername.Text = "name?";
             // 
-            // toolStripLabel2
+            // tslbDateTime
             // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(76, 22);
-            this.toolStripLabel2.Text = "datetime?";
+            this.tslbDateTime.Name = "tslbDateTime";
+            this.tslbDateTime.Size = new System.Drawing.Size(76, 22);
+            this.tslbDateTime.Text = "datetime?";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Location = new System.Drawing.Point(407, 426);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(265, 212);
             this.groupBox1.TabIndex = 46;
             this.groupBox1.TabStop = false;
@@ -273,7 +275,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.button1.Location = new System.Drawing.Point(217, 162);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(48, 28);
             this.button1.TabIndex = 48;
@@ -343,19 +345,20 @@
             this.BTNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTNew.UseVisualStyleBackColor = false;
             // 
-            // BTMainMenu
+            // btMainMenu
             // 
-            this.BTMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
-            this.BTMainMenu.Location = new System.Drawing.Point(809, 11);
-            this.BTMainMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BTMainMenu.Name = "BTMainMenu";
-            this.BTMainMenu.Size = new System.Drawing.Size(160, 80);
-            this.BTMainMenu.TabIndex = 41;
-            this.BTMainMenu.Text = "หน้าจอหลัก";
-            this.BTMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BTMainMenu.UseVisualStyleBackColor = false;
+            this.btMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
+            this.btMainMenu.Location = new System.Drawing.Point(809, 11);
+            this.btMainMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btMainMenu.Name = "btMainMenu";
+            this.btMainMenu.Size = new System.Drawing.Size(160, 80);
+            this.btMainMenu.TabIndex = 41;
+            this.btMainMenu.Text = "หน้าจอหลัก";
+            this.btMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btMainMenu.UseVisualStyleBackColor = false;
+            this.btMainMenu.Click += new System.EventHandler(this.btMainMenu_Click);
             // 
             // groupResult
             // 
@@ -521,6 +524,10 @@
             this.labelid2.TabIndex = 16;
             this.labelid2.Text = "ID Card";
             // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // FrmDooDuang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -532,15 +539,16 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.BTFind);
             this.Controls.Add(this.BTNew);
-            this.Controls.Add(this.BTMainMenu);
+            this.Controls.Add(this.btMainMenu);
             this.Controls.Add(this.HeadLabel);
             this.Controls.Add(this.groupPrivateInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmDooDuang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "หน้าจอDooDuang - DTI Soft V.1.0";
+            this.Load += new System.EventHandler(this.FrmDooDuang_Load);
             this.groupPrivateInfo.ResumeLayout(false);
             this.groupPrivateInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownH)).EndInit();
@@ -560,7 +568,7 @@
 
         private System.Windows.Forms.GroupBox groupPrivateInfo;
         private System.Windows.Forms.Label HeadLabel;
-        private System.Windows.Forms.Button BTMainMenu;
+        private System.Windows.Forms.Button btMainMenu;
         private System.Windows.Forms.MaskedTextBox maskedID;
         private System.Windows.Forms.Label LabelidCard;
         private System.Windows.Forms.Label labelWeight;
@@ -574,8 +582,8 @@
         private System.Windows.Forms.Button BTNew;
         private System.Windows.Forms.Button BTFind;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripLabel tslbUsername;
+        private System.Windows.Forms.ToolStripLabel tslbDateTime;
         private System.Windows.Forms.Button BTendProgram;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -596,5 +604,6 @@
         private System.Windows.Forms.Label labelResultDuang;
         private System.Windows.Forms.TextBox TFUsername;
         private System.Windows.Forms.Label LabelFullname1;
+        private System.Windows.Forms.Timer timer;
     }
 }

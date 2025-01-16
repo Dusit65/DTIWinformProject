@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLotto));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.tslbUsername = new System.Windows.Forms.ToolStripLabel();
+            this.tslbDateTime = new System.Windows.Forms.ToolStripLabel();
             this.HeadLabel = new System.Windows.Forms.Label();
             this.labelLottoDate = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -51,7 +52,8 @@
             this.labelReward2 = new System.Windows.Forms.Label();
             this.radioRewardOn = new System.Windows.Forms.RadioButton();
             this.radioRewardOff = new System.Windows.Forms.RadioButton();
-            this.BTMainMenu = new System.Windows.Forms.Button();
+            this.btMainMenu = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1.SuspendLayout();
             this.groupReward1.SuspendLayout();
             this.groupReward3up.SuspendLayout();
@@ -64,26 +66,26 @@
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.toolStripLabel2});
+            this.tslbUsername,
+            this.tslbDateTime});
             this.toolStrip1.Location = new System.Drawing.Point(0, 626);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1013, 25);
             this.toolStrip1.TabIndex = 33;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripLabel1
+            // tslbUsername
             // 
-            this.toolStripLabel1.ForeColor = System.Drawing.Color.Blue;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(53, 22);
-            this.toolStripLabel1.Text = "name?";
+            this.tslbUsername.ForeColor = System.Drawing.Color.Blue;
+            this.tslbUsername.Name = "tslbUsername";
+            this.tslbUsername.Size = new System.Drawing.Size(53, 22);
+            this.tslbUsername.Text = "name?";
             // 
-            // toolStripLabel2
+            // tslbDateTime
             // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(76, 22);
-            this.toolStripLabel2.Text = "datetime?";
+            this.tslbDateTime.Name = "tslbDateTime";
+            this.tslbDateTime.Size = new System.Drawing.Size(76, 22);
+            this.tslbDateTime.Text = "datetime?";
             // 
             // HeadLabel
             // 
@@ -310,19 +312,24 @@
             this.radioRewardOff.Text = "ปิดการออกรางวัล";
             this.radioRewardOff.UseVisualStyleBackColor = true;
             // 
-            // BTMainMenu
+            // btMainMenu
             // 
-            this.BTMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
-            this.BTMainMenu.Location = new System.Drawing.Point(797, 9);
-            this.BTMainMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BTMainMenu.Name = "BTMainMenu";
-            this.BTMainMenu.Size = new System.Drawing.Size(160, 103);
-            this.BTMainMenu.TabIndex = 35;
-            this.BTMainMenu.Text = "หน้าจอหลัก";
-            this.BTMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BTMainMenu.UseVisualStyleBackColor = false;
+            this.btMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
+            this.btMainMenu.Location = new System.Drawing.Point(797, 9);
+            this.btMainMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btMainMenu.Name = "btMainMenu";
+            this.btMainMenu.Size = new System.Drawing.Size(160, 103);
+            this.btMainMenu.TabIndex = 35;
+            this.btMainMenu.Text = "หน้าจอหลัก";
+            this.btMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btMainMenu.UseVisualStyleBackColor = false;
+            this.btMainMenu.Click += new System.EventHandler(this.btMainMenu_Click);
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // FrmLotto
             // 
@@ -337,7 +344,7 @@
             this.Controls.Add(this.groupReward1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.labelLottoDate);
-            this.Controls.Add(this.BTMainMenu);
+            this.Controls.Add(this.btMainMenu);
             this.Controls.Add(this.HeadLabel);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -347,6 +354,7 @@
             this.Name = "FrmLotto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "หน้าจอSAU Shop- DTI Soft V.1.0";
+            this.Load += new System.EventHandler(this.FrmLotto_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.groupReward1.ResumeLayout(false);
@@ -365,10 +373,10 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripLabel tslbUsername;
+        private System.Windows.Forms.ToolStripLabel tslbDateTime;
         private System.Windows.Forms.Label HeadLabel;
-        private System.Windows.Forms.Button BTMainMenu;
+        private System.Windows.Forms.Button btMainMenu;
         private System.Windows.Forms.Label labelLottoDate;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.GroupBox groupReward1;
@@ -387,5 +395,6 @@
         private System.Windows.Forms.Label labelReward2;
         private System.Windows.Forms.RadioButton radioRewardOn;
         private System.Windows.Forms.RadioButton radioRewardOff;
+        private System.Windows.Forms.Timer timer;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSAURegister));
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.listBoxSubject = new System.Windows.Forms.ListBox();
@@ -41,8 +42,8 @@
             this.BTBack = new System.Windows.Forms.Button();
             this.BTdoubleback = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.tslbUsername = new System.Windows.Forms.ToolStripLabel();
+            this.tslbDateTime = new System.Windows.Forms.ToolStripLabel();
             this.d = new System.Windows.Forms.ListBox();
             this.TFStuId = new System.Windows.Forms.TextBox();
             this.LabeStuId = new System.Windows.Forms.Label();
@@ -54,10 +55,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.checkBoxAccept = new System.Windows.Forms.CheckBox();
-            this.BTMainMenu = new System.Windows.Forms.Button();
+            this.btMainMenu = new System.Windows.Forms.Button();
             this.BTendProgram = new System.Windows.Forms.Button();
             this.BTCancel = new System.Windows.Forms.Button();
             this.BTSignin = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,7 +135,7 @@
             "ชั้นมัธยมศึกษาปีที่ 5",
             "ชั้นมัธยมศึกษาปีที่ 6"});
             this.CBBSemester.Location = new System.Drawing.Point(69, 352);
-            this.CBBSemester.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CBBSemester.Margin = new System.Windows.Forms.Padding(4);
             this.CBBSemester.Name = "CBBSemester";
             this.CBBSemester.Size = new System.Drawing.Size(160, 24);
             this.CBBSemester.TabIndex = 39;
@@ -143,7 +145,7 @@
             this.BTNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.BTNext.ForeColor = System.Drawing.Color.Lime;
             this.BTNext.Location = new System.Drawing.Point(259, 432);
-            this.BTNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNext.Margin = new System.Windows.Forms.Padding(4);
             this.BTNext.Name = "BTNext";
             this.BTNext.Size = new System.Drawing.Size(100, 38);
             this.BTNext.TabIndex = 40;
@@ -165,7 +167,7 @@
             this.BTdoubleN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.BTdoubleN.ForeColor = System.Drawing.Color.Lime;
             this.BTdoubleN.Location = new System.Drawing.Point(259, 483);
-            this.BTdoubleN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTdoubleN.Margin = new System.Windows.Forms.Padding(4);
             this.BTdoubleN.Name = "BTdoubleN";
             this.BTdoubleN.Size = new System.Drawing.Size(100, 38);
             this.BTdoubleN.TabIndex = 42;
@@ -177,7 +179,7 @@
             this.BTBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.BTBack.ForeColor = System.Drawing.Color.Red;
             this.BTBack.Location = new System.Drawing.Point(259, 529);
-            this.BTBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTBack.Margin = new System.Windows.Forms.Padding(4);
             this.BTBack.Name = "BTBack";
             this.BTBack.Size = new System.Drawing.Size(100, 38);
             this.BTBack.TabIndex = 43;
@@ -189,7 +191,7 @@
             this.BTdoubleback.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.BTdoubleback.ForeColor = System.Drawing.Color.Red;
             this.BTdoubleback.Location = new System.Drawing.Point(259, 575);
-            this.BTdoubleback.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTdoubleback.Margin = new System.Windows.Forms.Padding(4);
             this.BTdoubleback.Name = "BTdoubleback";
             this.BTdoubleback.Size = new System.Drawing.Size(100, 38);
             this.BTdoubleback.TabIndex = 44;
@@ -202,33 +204,33 @@
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.toolStripLabel2});
+            this.tslbUsername,
+            this.tslbDateTime});
             this.toolStrip1.Location = new System.Drawing.Point(0, 665);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1108, 25);
             this.toolStrip1.TabIndex = 45;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripLabel1
+            // tslbUsername
             // 
-            this.toolStripLabel1.ForeColor = System.Drawing.Color.Blue;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(53, 22);
-            this.toolStripLabel1.Text = "name?";
+            this.tslbUsername.ForeColor = System.Drawing.Color.Blue;
+            this.tslbUsername.Name = "tslbUsername";
+            this.tslbUsername.Size = new System.Drawing.Size(53, 22);
+            this.tslbUsername.Text = "name?";
             // 
-            // toolStripLabel2
+            // tslbDateTime
             // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(76, 22);
-            this.toolStripLabel2.Text = "datetime?";
+            this.tslbDateTime.Name = "tslbDateTime";
+            this.tslbDateTime.Size = new System.Drawing.Size(76, 22);
+            this.tslbDateTime.Text = "datetime?";
             // 
             // d
             // 
             this.d.FormattingEnabled = true;
             this.d.ItemHeight = 16;
             this.d.Location = new System.Drawing.Point(431, 432);
-            this.d.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.d.Margin = new System.Windows.Forms.Padding(4);
             this.d.Name = "d";
             this.d.Size = new System.Drawing.Size(159, 180);
             this.d.TabIndex = 46;
@@ -312,7 +314,7 @@
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(708, 121);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(315, 299);
             this.panel1.TabIndex = 56;
@@ -322,7 +324,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.button1.Location = new System.Drawing.Point(1044, 377);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(48, 43);
             this.button1.TabIndex = 57;
@@ -342,19 +344,20 @@
             this.checkBoxAccept.Text = "ยืนยันการลงทะเบียน";
             this.checkBoxAccept.UseVisualStyleBackColor = true;
             // 
-            // BTMainMenu
+            // btMainMenu
             // 
-            this.BTMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
-            this.BTMainMenu.Location = new System.Drawing.Point(809, 14);
-            this.BTMainMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BTMainMenu.Name = "BTMainMenu";
-            this.BTMainMenu.Size = new System.Drawing.Size(160, 80);
-            this.BTMainMenu.TabIndex = 62;
-            this.BTMainMenu.Text = "หน้าจอหลัก";
-            this.BTMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BTMainMenu.UseVisualStyleBackColor = false;
+            this.btMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
+            this.btMainMenu.Location = new System.Drawing.Point(809, 14);
+            this.btMainMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btMainMenu.Name = "btMainMenu";
+            this.btMainMenu.Size = new System.Drawing.Size(160, 80);
+            this.btMainMenu.TabIndex = 62;
+            this.btMainMenu.Text = "หน้าจอหลัก";
+            this.btMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btMainMenu.UseVisualStyleBackColor = false;
+            this.btMainMenu.Click += new System.EventHandler(this.btMainMenu_Click);
             // 
             // BTendProgram
             // 
@@ -401,12 +404,16 @@
             this.BTSignin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTSignin.UseVisualStyleBackColor = false;
             // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // FrmSAURegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1108, 690);
-            this.Controls.Add(this.BTMainMenu);
+            this.Controls.Add(this.btMainMenu);
             this.Controls.Add(this.BTendProgram);
             this.Controls.Add(this.BTCancel);
             this.Controls.Add(this.BTSignin);
@@ -462,8 +469,8 @@
         private System.Windows.Forms.Button BTBack;
         private System.Windows.Forms.Button BTdoubleback;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripLabel tslbUsername;
+        private System.Windows.Forms.ToolStripLabel tslbDateTime;
         private System.Windows.Forms.ListBox d;
         private System.Windows.Forms.TextBox TFStuId;
         private System.Windows.Forms.Label LabeStuId;
@@ -478,6 +485,7 @@
         private System.Windows.Forms.Button BTSignin;
         private System.Windows.Forms.Button BTCancel;
         private System.Windows.Forms.Button BTendProgram;
-        private System.Windows.Forms.Button BTMainMenu;
+        private System.Windows.Forms.Button btMainMenu;
+        private System.Windows.Forms.Timer timer;
     }
 }

@@ -66,8 +66,17 @@ namespace DTIWinformProject
                 }
                 else
                 {
-                     // If Username and Password correct then open to FrmMainMenu and display Username
-                     FrmMainMenu frmMainMenu = new FrmMainMenu();
+                    // If Username and Password correct then open to FrmMainMenu and display Username
+                    ShareData.loginName = tbUsername.Text.Trim();
+                    if (rdStudent.Checked == true)
+                    {
+                        ShareData.loginType = "student";
+                    }
+                    else
+                    {
+                        ShareData.loginType = "Teacher";
+                    }
+                    FrmMainMenu frmMainMenu = new FrmMainMenu();
                     frmMainMenu.Show();
                     Hide();//ปิดหน้าจอ
 

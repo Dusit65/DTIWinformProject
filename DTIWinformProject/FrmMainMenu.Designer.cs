@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainMenu));
             this.HeadLabel = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.tslbUsername = new System.Windows.Forms.ToolStripLabel();
+            this.tslbDateTime = new System.Windows.Forms.ToolStripLabel();
             this.btLogout = new System.Windows.Forms.Button();
             this.btGoShapeArea = new System.Windows.Forms.Button();
             this.btGoRegister = new System.Windows.Forms.Button();
@@ -41,6 +42,7 @@
             this.btGoSAUShop = new System.Windows.Forms.Button();
             this.btGoCalculator = new System.Windows.Forms.Button();
             this.btGoWelcome = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,27 +63,26 @@
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.toolStripLabel2});
+            this.tslbUsername,
+            this.tslbDateTime});
             this.toolStrip1.Location = new System.Drawing.Point(0, 626);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1013, 25);
             this.toolStrip1.TabIndex = 10;
             this.toolStrip1.Text = "toolStrip1";
-            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
-            // toolStripLabel1
+            // tslbUsername
             // 
-            this.toolStripLabel1.ForeColor = System.Drawing.Color.Blue;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(53, 22);
-            this.toolStripLabel1.Text = "name?";
+            this.tslbUsername.ForeColor = System.Drawing.Color.Blue;
+            this.tslbUsername.Name = "tslbUsername";
+            this.tslbUsername.Size = new System.Drawing.Size(53, 22);
+            this.tslbUsername.Text = "name?";
             // 
-            // toolStripLabel2
+            // tslbDateTime
             // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(76, 22);
-            this.toolStripLabel2.Text = "datetime?";
+            this.tslbDateTime.Name = "tslbDateTime";
+            this.tslbDateTime.Size = new System.Drawing.Size(76, 22);
+            this.tslbDateTime.Text = "datetime?";
             // 
             // btLogout
             // 
@@ -96,6 +97,7 @@
             this.btLogout.Text = "ออกจากระบบ";
             this.btLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btLogout.UseVisualStyleBackColor = false;
+            this.btLogout.Click += new System.EventHandler(this.btLogout_Click);
             // 
             // btGoShapeArea
             // 
@@ -110,6 +112,7 @@
             this.btGoShapeArea.Text = "Go to Shape Area";
             this.btGoShapeArea.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btGoShapeArea.UseVisualStyleBackColor = false;
+            this.btGoShapeArea.Click += new System.EventHandler(this.btGoShapeArea_Click);
             // 
             // btGoRegister
             // 
@@ -124,6 +127,7 @@
             this.btGoRegister.Text = "Go to Register";
             this.btGoRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btGoRegister.UseVisualStyleBackColor = false;
+            this.btGoRegister.Click += new System.EventHandler(this.btGoRegister_Click);
             // 
             // btGoLotto
             // 
@@ -138,6 +142,7 @@
             this.btGoLotto.Text = "Go to Lotto";
             this.btGoLotto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btGoLotto.UseVisualStyleBackColor = false;
+            this.btGoLotto.Click += new System.EventHandler(this.btGoLotto_Click);
             // 
             // btGoDooDuang
             // 
@@ -152,6 +157,7 @@
             this.btGoDooDuang.Text = "Go to Doo Duang";
             this.btGoDooDuang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btGoDooDuang.UseVisualStyleBackColor = false;
+            this.btGoDooDuang.Click += new System.EventHandler(this.btGoDooDuang_Click);
             // 
             // btGoSAUShop
             // 
@@ -166,6 +172,7 @@
             this.btGoSAUShop.Text = "Go to SAU Shop";
             this.btGoSAUShop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btGoSAUShop.UseVisualStyleBackColor = false;
+            this.btGoSAUShop.Click += new System.EventHandler(this.btGoSAUShop_Click);
             // 
             // btGoCalculator
             // 
@@ -180,6 +187,7 @@
             this.btGoCalculator.Text = "Go to Calculator";
             this.btGoCalculator.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btGoCalculator.UseVisualStyleBackColor = false;
+            this.btGoCalculator.Click += new System.EventHandler(this.btGoCalculator_Click);
             // 
             // btGoWelcome
             // 
@@ -194,6 +202,11 @@
             this.btGoWelcome.Text = "Go to Welcome";
             this.btGoWelcome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btGoWelcome.UseVisualStyleBackColor = false;
+            this.btGoWelcome.Click += new System.EventHandler(this.btGoWelcome_Click);
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // FrmMainMenu
             // 
@@ -238,7 +251,8 @@
         private System.Windows.Forms.Button btGoShapeArea;
         private System.Windows.Forms.Button btLogout;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripLabel tslbUsername;
+        private System.Windows.Forms.ToolStripLabel tslbDateTime;
+        private System.Windows.Forms.Timer timer;
     }
 }

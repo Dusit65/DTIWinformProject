@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCalculator));
             this.HeadLabel = new System.Windows.Forms.Label();
             this.tbNum1 = new System.Windows.Forms.TextBox();
@@ -42,10 +43,11 @@
             this.lbResult = new System.Windows.Forms.Label();
             this.LabelResult = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.tslbUsername = new System.Windows.Forms.ToolStripLabel();
+            this.tslbDateTime = new System.Windows.Forms.ToolStripLabel();
             this.cbb = new System.Windows.Forms.ComboBox();
             this.btMainMenu = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +62,6 @@
             this.HeadLabel.TabIndex = 3;
             this.HeadLabel.Text = "Calculator";
             this.HeadLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.HeadLabel.Click += new System.EventHandler(this.HeadLabel_Click);
             // 
             // tbNum1
             // 
@@ -79,7 +80,7 @@
             this.TextNum1.Size = new System.Drawing.Size(127, 29);
             this.TextNum1.TabIndex = 5;
             this.TextNum1.Text = "ป้อนตัวเลข :";
-            this.TextNum1.Click += new System.EventHandler(this.TextUser_Click);
+            this.TextNum1.Click += new System.EventHandler(this.btMainMenu_Click);
             // 
             // tbNum2
             // 
@@ -186,26 +187,26 @@
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.toolStripLabel2});
+            this.tslbUsername,
+            this.tslbDateTime});
             this.toolStrip1.Location = new System.Drawing.Point(0, 626);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1014, 25);
             this.toolStrip1.TabIndex = 16;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripLabel1
+            // tslbUsername
             // 
-            this.toolStripLabel1.ForeColor = System.Drawing.Color.Blue;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(53, 22);
-            this.toolStripLabel1.Text = "name?";
+            this.tslbUsername.ForeColor = System.Drawing.Color.Blue;
+            this.tslbUsername.Name = "tslbUsername";
+            this.tslbUsername.Size = new System.Drawing.Size(53, 22);
+            this.tslbUsername.Text = "name?";
             // 
-            // toolStripLabel2
+            // tslbDateTime
             // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(76, 22);
-            this.toolStripLabel2.Text = "datetime?";
+            this.tslbDateTime.Name = "tslbDateTime";
+            this.tslbDateTime.Size = new System.Drawing.Size(76, 22);
+            this.tslbDateTime.Text = "datetime?";
             // 
             // cbb
             // 
@@ -219,7 +220,6 @@
             this.cbb.Name = "cbb";
             this.cbb.Size = new System.Drawing.Size(213, 39);
             this.cbb.TabIndex = 17;
-            this.cbb.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btMainMenu
             // 
@@ -233,6 +233,11 @@
             this.btMainMenu.Text = "หน้าจอหลัก";
             this.btMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btMainMenu.UseVisualStyleBackColor = false;
+            this.btMainMenu.Click += new System.EventHandler(this.btMainMenu_Click);
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // FrmCalculator
             // 
@@ -258,7 +263,8 @@
             this.MaximizeBox = false;
             this.Name = "FrmCalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "หน้าจอCalculator - DTI Soft V.1.0";
+            this.Text = "))";
+            this.Load += new System.EventHandler(this.FrmCalculator_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -282,8 +288,9 @@
         private System.Windows.Forms.Label lbResult;
         private System.Windows.Forms.Label LabelResult;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripLabel tslbUsername;
+        private System.Windows.Forms.ToolStripLabel tslbDateTime;
         private System.Windows.Forms.ComboBox cbb;
+        private System.Windows.Forms.Timer timer;
     }
 }

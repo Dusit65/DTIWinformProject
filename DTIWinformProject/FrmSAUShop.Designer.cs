@@ -28,44 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSAUShop));
             this.HeadLabel = new System.Windows.Forms.Label();
             this.cbPen = new System.Windows.Forms.CheckBox();
             this.labelProductList = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.BTCalculate = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.gbResult = new System.Windows.Forms.GroupBox();
+            this.btCancel = new System.Windows.Forms.Button();
+            this.btCalculate = new System.Windows.Forms.Button();
+            this.lbResultBaht = new System.Windows.Forms.Label();
+            this.lbTotal = new System.Windows.Forms.Label();
+            this.lbTotalResult = new System.Windows.Forms.Label();
             this.labelTotalPrice = new System.Windows.Forms.Label();
             this.labelQuantity = new System.Windows.Forms.Label();
-            this.TBPen = new System.Windows.Forms.TextBox();
-            this.labelTotalPen = new System.Windows.Forms.Label();
+            this.tbQuanPen = new System.Windows.Forms.TextBox();
+            this.lbTotalPen = new System.Windows.Forms.Label();
             this.labelBaht1 = new System.Windows.Forms.Label();
             this.labelBaht3 = new System.Windows.Forms.Label();
-            this.labelTotalEraser = new System.Windows.Forms.Label();
-            this.TBEraser = new System.Windows.Forms.TextBox();
-            this.checkBoxEraser = new System.Windows.Forms.CheckBox();
+            this.lbTotalEraser = new System.Windows.Forms.Label();
+            this.tbQuanEraser = new System.Windows.Forms.TextBox();
+            this.cbEraser = new System.Windows.Forms.CheckBox();
             this.labelBaht2 = new System.Windows.Forms.Label();
-            this.labelTotalPencil = new System.Windows.Forms.Label();
-            this.TBPencil = new System.Windows.Forms.TextBox();
-            this.checkBoxPencil = new System.Windows.Forms.CheckBox();
+            this.lbTotalPencil = new System.Windows.Forms.Label();
+            this.tbQuanPencil = new System.Windows.Forms.TextBox();
+            this.cbPencil = new System.Windows.Forms.CheckBox();
             this.labelBaht4 = new System.Windows.Forms.Label();
-            this.labelTotalRuler = new System.Windows.Forms.Label();
-            this.TBRuler = new System.Windows.Forms.TextBox();
-            this.checkBoxRuler = new System.Windows.Forms.CheckBox();
+            this.lbTotalRuler = new System.Windows.Forms.Label();
+            this.tbQuanRuler = new System.Windows.Forms.TextBox();
+            this.cbRuler = new System.Windows.Forms.CheckBox();
             this.labelBaht5 = new System.Windows.Forms.Label();
-            this.labelTotalNbook = new System.Windows.Forms.Label();
-            this.TBNbook = new System.Windows.Forms.TextBox();
-            this.checkBoxNbook = new System.Windows.Forms.CheckBox();
-            this.labelDiscount = new System.Windows.Forms.Label();
+            this.lbTotalNbook = new System.Windows.Forms.Label();
+            this.tbQuanNotebook = new System.Windows.Forms.TextBox();
+            this.cbNotebook = new System.Windows.Forms.CheckBox();
+            this.lbDiscount = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.BTMainMenu = new System.Windows.Forms.Button();
+            this.btMainMenu = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.groupBox1.SuspendLayout();
+            this.tslbUsername = new System.Windows.Forms.ToolStripLabel();
+            this.tslbDateTime = new System.Windows.Forms.ToolStripLabel();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.gbResult.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,82 +105,80 @@
             this.labelProductList.TabIndex = 7;
             this.labelProductList.Text = "รายการสินค้า";
             // 
-            // groupBox1
+            // gbResult
             // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.BTCalculate);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(107, 494);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(804, 102);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.gbResult.Controls.Add(this.btCancel);
+            this.gbResult.Controls.Add(this.btCalculate);
+            this.gbResult.Controls.Add(this.lbResultBaht);
+            this.gbResult.Controls.Add(this.lbTotal);
+            this.gbResult.Controls.Add(this.lbTotalResult);
+            this.gbResult.Location = new System.Drawing.Point(107, 494);
+            this.gbResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbResult.Name = "gbResult";
+            this.gbResult.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbResult.Size = new System.Drawing.Size(804, 102);
+            this.gbResult.TabIndex = 8;
+            this.gbResult.TabStop = false;
             // 
-            // button1
+            // btCancel
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::DTIWinformProject.Properties.Resources.cancel;
-            this.button1.Location = new System.Drawing.Point(597, 15);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 79);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "ยกเลิก";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btCancel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCancel.Image = global::DTIWinformProject.Properties.Resources.cancel;
+            this.btCancel.Location = new System.Drawing.Point(597, 15);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.Size = new System.Drawing.Size(125, 79);
+            this.btCancel.TabIndex = 32;
+            this.btCancel.Text = "ยกเลิก";
+            this.btCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btCancel.UseVisualStyleBackColor = false;
             // 
-            // BTCalculate
+            // btCalculate
             // 
-            this.BTCalculate.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTCalculate.Image = global::DTIWinformProject.Properties.Resources.calculator2;
-            this.BTCalculate.Location = new System.Drawing.Point(435, 15);
-            this.BTCalculate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BTCalculate.Name = "BTCalculate";
-            this.BTCalculate.Size = new System.Drawing.Size(125, 79);
-            this.BTCalculate.TabIndex = 33;
-            this.BTCalculate.Text = "คำนวณ";
-            this.BTCalculate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTCalculate.UseVisualStyleBackColor = false;
+            this.btCalculate.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCalculate.Image = global::DTIWinformProject.Properties.Resources.calculator2;
+            this.btCalculate.Location = new System.Drawing.Point(435, 15);
+            this.btCalculate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btCalculate.Name = "btCalculate";
+            this.btCalculate.Size = new System.Drawing.Size(125, 79);
+            this.btCalculate.TabIndex = 33;
+            this.btCalculate.Text = "คำนวณ";
+            this.btCalculate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btCalculate.UseVisualStyleBackColor = false;
             // 
-            // label3
+            // lbResultBaht
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(371, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 25);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "บาท";
+            this.lbResultBaht.AutoSize = true;
+            this.lbResultBaht.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbResultBaht.Location = new System.Drawing.Point(371, 41);
+            this.lbResultBaht.Name = "lbResultBaht";
+            this.lbResultBaht.Size = new System.Drawing.Size(46, 25);
+            this.lbResultBaht.TabIndex = 32;
+            this.lbResultBaht.Text = "บาท";
             // 
-            // label2
+            // lbTotal
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 25);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "รวมเป็นเงินทั้งสิ้น";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            this.lbTotal.AutoSize = true;
+            this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotal.Location = new System.Drawing.Point(8, 41);
+            this.lbTotal.Name = "lbTotal";
+            this.lbTotal.Size = new System.Drawing.Size(147, 25);
+            this.lbTotal.TabIndex = 32;
+            this.lbTotal.Text = "รวมเป็นเงินทั้งสิ้น";
             // 
-            // label1
+            // lbTotalResult
             // 
-            this.label1.BackColor = System.Drawing.Color.Yellow;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(196, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 65);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "0.00";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbTotalResult.BackColor = System.Drawing.Color.Yellow;
+            this.lbTotalResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotalResult.ForeColor = System.Drawing.Color.Red;
+            this.lbTotalResult.Location = new System.Drawing.Point(196, 18);
+            this.lbTotalResult.Name = "lbTotalResult";
+            this.lbTotalResult.Size = new System.Drawing.Size(140, 65);
+            this.lbTotalResult.TabIndex = 32;
+            this.lbTotalResult.Text = "0.00";
+            this.lbTotalResult.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelTotalPrice
             // 
@@ -200,25 +200,25 @@
             this.labelQuantity.TabIndex = 10;
             this.labelQuantity.Text = "จำนวน";
             // 
-            // TBPen
+            // tbQuanPen
             // 
-            this.TBPen.Location = new System.Drawing.Point(303, 199);
-            this.TBPen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TBPen.Name = "TBPen";
-            this.TBPen.Size = new System.Drawing.Size(128, 22);
-            this.TBPen.TabIndex = 11;
+            this.tbQuanPen.Location = new System.Drawing.Point(303, 199);
+            this.tbQuanPen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbQuanPen.Name = "tbQuanPen";
+            this.tbQuanPen.Size = new System.Drawing.Size(128, 22);
+            this.tbQuanPen.TabIndex = 11;
             // 
-            // labelTotalPen
+            // lbTotalPen
             // 
-            this.labelTotalPen.BackColor = System.Drawing.Color.Yellow;
-            this.labelTotalPen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalPen.ForeColor = System.Drawing.Color.Red;
-            this.labelTotalPen.Location = new System.Drawing.Point(493, 193);
-            this.labelTotalPen.Name = "labelTotalPen";
-            this.labelTotalPen.Size = new System.Drawing.Size(125, 31);
-            this.labelTotalPen.TabIndex = 12;
-            this.labelTotalPen.Text = "0.00";
-            this.labelTotalPen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbTotalPen.BackColor = System.Drawing.Color.Yellow;
+            this.lbTotalPen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotalPen.ForeColor = System.Drawing.Color.Red;
+            this.lbTotalPen.Location = new System.Drawing.Point(493, 193);
+            this.lbTotalPen.Name = "lbTotalPen";
+            this.lbTotalPen.Size = new System.Drawing.Size(125, 31);
+            this.lbTotalPen.TabIndex = 12;
+            this.lbTotalPen.Text = "0.00";
+            this.lbTotalPen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelBaht1
             // 
@@ -229,7 +229,6 @@
             this.labelBaht1.Size = new System.Drawing.Size(43, 25);
             this.labelBaht1.TabIndex = 13;
             this.labelBaht1.Text = "บาท";
-            this.labelBaht1.Click += new System.EventHandler(this.label2_Click);
             // 
             // labelBaht3
             // 
@@ -241,37 +240,37 @@
             this.labelBaht3.TabIndex = 17;
             this.labelBaht3.Text = "บาท";
             // 
-            // labelTotalEraser
+            // lbTotalEraser
             // 
-            this.labelTotalEraser.BackColor = System.Drawing.Color.Yellow;
-            this.labelTotalEraser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalEraser.ForeColor = System.Drawing.Color.Red;
-            this.labelTotalEraser.Location = new System.Drawing.Point(493, 300);
-            this.labelTotalEraser.Name = "labelTotalEraser";
-            this.labelTotalEraser.Size = new System.Drawing.Size(125, 31);
-            this.labelTotalEraser.TabIndex = 16;
-            this.labelTotalEraser.Text = "0.00";
-            this.labelTotalEraser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbTotalEraser.BackColor = System.Drawing.Color.Yellow;
+            this.lbTotalEraser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotalEraser.ForeColor = System.Drawing.Color.Red;
+            this.lbTotalEraser.Location = new System.Drawing.Point(493, 300);
+            this.lbTotalEraser.Name = "lbTotalEraser";
+            this.lbTotalEraser.Size = new System.Drawing.Size(125, 31);
+            this.lbTotalEraser.TabIndex = 16;
+            this.lbTotalEraser.Text = "0.00";
+            this.lbTotalEraser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TBEraser
+            // tbQuanEraser
             // 
-            this.TBEraser.Location = new System.Drawing.Point(303, 305);
-            this.TBEraser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TBEraser.Name = "TBEraser";
-            this.TBEraser.Size = new System.Drawing.Size(128, 22);
-            this.TBEraser.TabIndex = 15;
+            this.tbQuanEraser.Location = new System.Drawing.Point(303, 305);
+            this.tbQuanEraser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbQuanEraser.Name = "tbQuanEraser";
+            this.tbQuanEraser.Size = new System.Drawing.Size(128, 22);
+            this.tbQuanEraser.TabIndex = 15;
             // 
-            // checkBoxEraser
+            // cbEraser
             // 
-            this.checkBoxEraser.AutoSize = true;
-            this.checkBoxEraser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxEraser.Location = new System.Drawing.Point(61, 300);
-            this.checkBoxEraser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBoxEraser.Name = "checkBoxEraser";
-            this.checkBoxEraser.Size = new System.Drawing.Size(206, 29);
-            this.checkBoxEraser.TabIndex = 14;
-            this.checkBoxEraser.Text = "ยางลบ 2.50 บาท / ก้อน";
-            this.checkBoxEraser.UseVisualStyleBackColor = true;
+            this.cbEraser.AutoSize = true;
+            this.cbEraser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEraser.Location = new System.Drawing.Point(61, 300);
+            this.cbEraser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbEraser.Name = "cbEraser";
+            this.cbEraser.Size = new System.Drawing.Size(206, 29);
+            this.cbEraser.TabIndex = 14;
+            this.cbEraser.Text = "ยางลบ 2.50 บาท / ก้อน";
+            this.cbEraser.UseVisualStyleBackColor = true;
             // 
             // labelBaht2
             // 
@@ -283,37 +282,37 @@
             this.labelBaht2.TabIndex = 21;
             this.labelBaht2.Text = "บาท";
             // 
-            // labelTotalPencil
+            // lbTotalPencil
             // 
-            this.labelTotalPencil.BackColor = System.Drawing.Color.Yellow;
-            this.labelTotalPencil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalPencil.ForeColor = System.Drawing.Color.Red;
-            this.labelTotalPencil.Location = new System.Drawing.Point(493, 245);
-            this.labelTotalPencil.Name = "labelTotalPencil";
-            this.labelTotalPencil.Size = new System.Drawing.Size(125, 31);
-            this.labelTotalPencil.TabIndex = 20;
-            this.labelTotalPencil.Text = "0.00";
-            this.labelTotalPencil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbTotalPencil.BackColor = System.Drawing.Color.Yellow;
+            this.lbTotalPencil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotalPencil.ForeColor = System.Drawing.Color.Red;
+            this.lbTotalPencil.Location = new System.Drawing.Point(493, 245);
+            this.lbTotalPencil.Name = "lbTotalPencil";
+            this.lbTotalPencil.Size = new System.Drawing.Size(125, 31);
+            this.lbTotalPencil.TabIndex = 20;
+            this.lbTotalPencil.Text = "0.00";
+            this.lbTotalPencil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TBPencil
+            // tbQuanPencil
             // 
-            this.TBPencil.Location = new System.Drawing.Point(303, 252);
-            this.TBPencil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TBPencil.Name = "TBPencil";
-            this.TBPencil.Size = new System.Drawing.Size(128, 22);
-            this.TBPencil.TabIndex = 19;
+            this.tbQuanPencil.Location = new System.Drawing.Point(303, 254);
+            this.tbQuanPencil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbQuanPencil.Name = "tbQuanPencil";
+            this.tbQuanPencil.Size = new System.Drawing.Size(128, 22);
+            this.tbQuanPencil.TabIndex = 19;
             // 
-            // checkBoxPencil
+            // cbPencil
             // 
-            this.checkBoxPencil.AutoSize = true;
-            this.checkBoxPencil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxPencil.Location = new System.Drawing.Point(61, 245);
-            this.checkBoxPencil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBoxPencil.Name = "checkBoxPencil";
-            this.checkBoxPencil.Size = new System.Drawing.Size(201, 29);
-            this.checkBoxPencil.TabIndex = 18;
-            this.checkBoxPencil.Text = "ดินสอ 1.50 บาท / ด้าม";
-            this.checkBoxPencil.UseVisualStyleBackColor = true;
+            this.cbPencil.AutoSize = true;
+            this.cbPencil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPencil.Location = new System.Drawing.Point(61, 245);
+            this.cbPencil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbPencil.Name = "cbPencil";
+            this.cbPencil.Size = new System.Drawing.Size(201, 29);
+            this.cbPencil.TabIndex = 18;
+            this.cbPencil.Text = "ดินสอ 1.50 บาท / ด้าม";
+            this.cbPencil.UseVisualStyleBackColor = true;
             // 
             // labelBaht4
             // 
@@ -325,37 +324,37 @@
             this.labelBaht4.TabIndex = 25;
             this.labelBaht4.Text = "บาท";
             // 
-            // labelTotalRuler
+            // lbTotalRuler
             // 
-            this.labelTotalRuler.BackColor = System.Drawing.Color.Yellow;
-            this.labelTotalRuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalRuler.ForeColor = System.Drawing.Color.Red;
-            this.labelTotalRuler.Location = new System.Drawing.Point(493, 351);
-            this.labelTotalRuler.Name = "labelTotalRuler";
-            this.labelTotalRuler.Size = new System.Drawing.Size(125, 31);
-            this.labelTotalRuler.TabIndex = 24;
-            this.labelTotalRuler.Text = "0.00";
-            this.labelTotalRuler.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbTotalRuler.BackColor = System.Drawing.Color.Yellow;
+            this.lbTotalRuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotalRuler.ForeColor = System.Drawing.Color.Red;
+            this.lbTotalRuler.Location = new System.Drawing.Point(493, 351);
+            this.lbTotalRuler.Name = "lbTotalRuler";
+            this.lbTotalRuler.Size = new System.Drawing.Size(125, 31);
+            this.lbTotalRuler.TabIndex = 24;
+            this.lbTotalRuler.Text = "0.00";
+            this.lbTotalRuler.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TBRuler
+            // tbQuanRuler
             // 
-            this.TBRuler.Location = new System.Drawing.Point(303, 356);
-            this.TBRuler.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TBRuler.Name = "TBRuler";
-            this.TBRuler.Size = new System.Drawing.Size(128, 22);
-            this.TBRuler.TabIndex = 23;
+            this.tbQuanRuler.Location = new System.Drawing.Point(303, 356);
+            this.tbQuanRuler.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbQuanRuler.Name = "tbQuanRuler";
+            this.tbQuanRuler.Size = new System.Drawing.Size(128, 22);
+            this.tbQuanRuler.TabIndex = 23;
             // 
-            // checkBoxRuler
+            // cbRuler
             // 
-            this.checkBoxRuler.AutoSize = true;
-            this.checkBoxRuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxRuler.Location = new System.Drawing.Point(61, 351);
-            this.checkBoxRuler.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBoxRuler.Name = "checkBoxRuler";
-            this.checkBoxRuler.Size = new System.Drawing.Size(194, 29);
-            this.checkBoxRuler.TabIndex = 22;
-            this.checkBoxRuler.Text = "ไม้บรรทัด 2 บาท / อัน";
-            this.checkBoxRuler.UseVisualStyleBackColor = true;
+            this.cbRuler.AutoSize = true;
+            this.cbRuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRuler.Location = new System.Drawing.Point(61, 351);
+            this.cbRuler.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbRuler.Name = "cbRuler";
+            this.cbRuler.Size = new System.Drawing.Size(194, 29);
+            this.cbRuler.TabIndex = 22;
+            this.cbRuler.Text = "ไม้บรรทัด 2 บาท / อัน";
+            this.cbRuler.UseVisualStyleBackColor = true;
             // 
             // labelBaht5
             // 
@@ -367,48 +366,47 @@
             this.labelBaht5.TabIndex = 29;
             this.labelBaht5.Text = "บาท";
             // 
-            // labelTotalNbook
+            // lbTotalNbook
             // 
-            this.labelTotalNbook.BackColor = System.Drawing.Color.Yellow;
-            this.labelTotalNbook.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalNbook.ForeColor = System.Drawing.Color.Red;
-            this.labelTotalNbook.Location = new System.Drawing.Point(493, 405);
-            this.labelTotalNbook.Name = "labelTotalNbook";
-            this.labelTotalNbook.Size = new System.Drawing.Size(125, 31);
-            this.labelTotalNbook.TabIndex = 28;
-            this.labelTotalNbook.Text = "0.00";
-            this.labelTotalNbook.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbTotalNbook.BackColor = System.Drawing.Color.Yellow;
+            this.lbTotalNbook.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotalNbook.ForeColor = System.Drawing.Color.Red;
+            this.lbTotalNbook.Location = new System.Drawing.Point(493, 405);
+            this.lbTotalNbook.Name = "lbTotalNbook";
+            this.lbTotalNbook.Size = new System.Drawing.Size(125, 31);
+            this.lbTotalNbook.TabIndex = 28;
+            this.lbTotalNbook.Text = "0.00";
+            this.lbTotalNbook.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TBNbook
+            // tbQuanNotebook
             // 
-            this.TBNbook.Location = new System.Drawing.Point(303, 409);
-            this.TBNbook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TBNbook.Name = "TBNbook";
-            this.TBNbook.Size = new System.Drawing.Size(128, 22);
-            this.TBNbook.TabIndex = 27;
+            this.tbQuanNotebook.Location = new System.Drawing.Point(303, 409);
+            this.tbQuanNotebook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbQuanNotebook.Name = "tbQuanNotebook";
+            this.tbQuanNotebook.Size = new System.Drawing.Size(128, 22);
+            this.tbQuanNotebook.TabIndex = 27;
             // 
-            // checkBoxNbook
+            // cbNotebook
             // 
-            this.checkBoxNbook.AutoSize = true;
-            this.checkBoxNbook.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxNbook.Location = new System.Drawing.Point(61, 404);
-            this.checkBoxNbook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBoxNbook.Name = "checkBoxNbook";
-            this.checkBoxNbook.Size = new System.Drawing.Size(196, 29);
-            this.checkBoxNbook.TabIndex = 26;
-            this.checkBoxNbook.Text = "สมุด 10.25 บาท / เล่ม";
-            this.checkBoxNbook.UseVisualStyleBackColor = true;
+            this.cbNotebook.AutoSize = true;
+            this.cbNotebook.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbNotebook.Location = new System.Drawing.Point(61, 404);
+            this.cbNotebook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbNotebook.Name = "cbNotebook";
+            this.cbNotebook.Size = new System.Drawing.Size(196, 29);
+            this.cbNotebook.TabIndex = 26;
+            this.cbNotebook.Text = "สมุด 10.25 บาท / เล่ม";
+            this.cbNotebook.UseVisualStyleBackColor = true;
             // 
-            // labelDiscount
+            // lbDiscount
             // 
-            this.labelDiscount.AutoSize = true;
-            this.labelDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDiscount.Location = new System.Drawing.Point(133, 454);
-            this.labelDiscount.Name = "labelDiscount";
-            this.labelDiscount.Size = new System.Drawing.Size(67, 25);
-            this.labelDiscount.TabIndex = 30;
-            this.labelDiscount.Text = "ส่วนลด";
-            this.labelDiscount.Click += new System.EventHandler(this.labelDiscount_Click);
+            this.lbDiscount.AutoSize = true;
+            this.lbDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDiscount.Location = new System.Drawing.Point(133, 454);
+            this.lbDiscount.Name = "lbDiscount";
+            this.lbDiscount.Size = new System.Drawing.Size(67, 25);
+            this.lbDiscount.TabIndex = 30;
+            this.lbDiscount.Text = "ส่วนลด";
             // 
             // comboBox1
             // 
@@ -423,45 +421,50 @@
             this.comboBox1.Size = new System.Drawing.Size(163, 24);
             this.comboBox1.TabIndex = 31;
             // 
-            // BTMainMenu
+            // btMainMenu
             // 
-            this.BTMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BTMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
-            this.BTMainMenu.Location = new System.Drawing.Point(772, 9);
-            this.BTMainMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BTMainMenu.Name = "BTMainMenu";
-            this.BTMainMenu.Size = new System.Drawing.Size(160, 103);
-            this.BTMainMenu.TabIndex = 5;
-            this.BTMainMenu.Text = "หน้าจอหลัก";
-            this.BTMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BTMainMenu.UseVisualStyleBackColor = false;
+            this.btMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
+            this.btMainMenu.Location = new System.Drawing.Point(772, 9);
+            this.btMainMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btMainMenu.Name = "btMainMenu";
+            this.btMainMenu.Size = new System.Drawing.Size(160, 103);
+            this.btMainMenu.TabIndex = 5;
+            this.btMainMenu.Text = "หน้าจอหลัก";
+            this.btMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btMainMenu.UseVisualStyleBackColor = false;
+            this.btMainMenu.Click += new System.EventHandler(this.btMainMenu_Click);
             // 
             // toolStrip1
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.toolStripLabel2});
+            this.tslbUsername,
+            this.tslbDateTime});
             this.toolStrip1.Location = new System.Drawing.Point(0, 626);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1013, 25);
             this.toolStrip1.TabIndex = 32;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripLabel1
+            // tslbUsername
             // 
-            this.toolStripLabel1.ForeColor = System.Drawing.Color.Blue;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(53, 22);
-            this.toolStripLabel1.Text = "name?";
+            this.tslbUsername.ForeColor = System.Drawing.Color.Blue;
+            this.tslbUsername.Name = "tslbUsername";
+            this.tslbUsername.Size = new System.Drawing.Size(53, 22);
+            this.tslbUsername.Text = "name?";
             // 
-            // toolStripLabel2
+            // tslbDateTime
             // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(76, 22);
-            this.toolStripLabel2.Text = "datetime?";
+            this.tslbDateTime.Name = "tslbDateTime";
+            this.tslbDateTime.Size = new System.Drawing.Size(76, 22);
+            this.tslbDateTime.Text = "datetime?";
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // FrmSAUShop
             // 
@@ -470,32 +473,32 @@
             this.ClientSize = new System.Drawing.Size(1013, 651);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.labelDiscount);
+            this.Controls.Add(this.lbDiscount);
             this.Controls.Add(this.labelBaht5);
-            this.Controls.Add(this.labelTotalNbook);
-            this.Controls.Add(this.TBNbook);
-            this.Controls.Add(this.checkBoxNbook);
+            this.Controls.Add(this.lbTotalNbook);
+            this.Controls.Add(this.tbQuanNotebook);
+            this.Controls.Add(this.cbNotebook);
             this.Controls.Add(this.labelBaht4);
-            this.Controls.Add(this.labelTotalRuler);
-            this.Controls.Add(this.TBRuler);
-            this.Controls.Add(this.checkBoxRuler);
+            this.Controls.Add(this.lbTotalRuler);
+            this.Controls.Add(this.tbQuanRuler);
+            this.Controls.Add(this.cbRuler);
             this.Controls.Add(this.labelBaht2);
-            this.Controls.Add(this.labelTotalPencil);
-            this.Controls.Add(this.TBPencil);
-            this.Controls.Add(this.checkBoxPencil);
+            this.Controls.Add(this.lbTotalPencil);
+            this.Controls.Add(this.tbQuanPencil);
+            this.Controls.Add(this.cbPencil);
             this.Controls.Add(this.labelBaht3);
-            this.Controls.Add(this.labelTotalEraser);
-            this.Controls.Add(this.TBEraser);
-            this.Controls.Add(this.checkBoxEraser);
+            this.Controls.Add(this.lbTotalEraser);
+            this.Controls.Add(this.tbQuanEraser);
+            this.Controls.Add(this.cbEraser);
             this.Controls.Add(this.labelBaht1);
-            this.Controls.Add(this.labelTotalPen);
-            this.Controls.Add(this.TBPen);
+            this.Controls.Add(this.lbTotalPen);
+            this.Controls.Add(this.tbQuanPen);
             this.Controls.Add(this.labelQuantity);
             this.Controls.Add(this.labelTotalPrice);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbResult);
             this.Controls.Add(this.labelProductList);
             this.Controls.Add(this.cbPen);
-            this.Controls.Add(this.BTMainMenu);
+            this.Controls.Add(this.btMainMenu);
             this.Controls.Add(this.HeadLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -505,8 +508,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "หน้าจอSAU Shop- DTI Soft V.1.0";
             this.Load += new System.EventHandler(this.FrmSAUShop_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbResult.ResumeLayout(false);
+            this.gbResult.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -517,40 +520,41 @@
         #endregion
 
         private System.Windows.Forms.Label HeadLabel;
-        private System.Windows.Forms.Button BTMainMenu;
+        private System.Windows.Forms.Button btMainMenu;
         private System.Windows.Forms.CheckBox cbPen;
         private System.Windows.Forms.Label labelProductList;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbResult;
         private System.Windows.Forms.Label labelTotalPrice;
         private System.Windows.Forms.Label labelQuantity;
-        private System.Windows.Forms.TextBox TBPen;
-        private System.Windows.Forms.Label labelTotalPen;
+        private System.Windows.Forms.TextBox tbQuanPen;
+        private System.Windows.Forms.Label lbTotalPen;
         private System.Windows.Forms.Label labelBaht1;
         private System.Windows.Forms.Label labelBaht3;
-        private System.Windows.Forms.Label labelTotalEraser;
-        private System.Windows.Forms.TextBox TBEraser;
-        private System.Windows.Forms.CheckBox checkBoxEraser;
+        private System.Windows.Forms.Label lbTotalEraser;
+        private System.Windows.Forms.TextBox tbQuanEraser;
+        private System.Windows.Forms.CheckBox cbEraser;
         private System.Windows.Forms.Label labelBaht2;
-        private System.Windows.Forms.Label labelTotalPencil;
-        private System.Windows.Forms.TextBox TBPencil;
-        private System.Windows.Forms.CheckBox checkBoxPencil;
+        private System.Windows.Forms.Label lbTotalPencil;
+        private System.Windows.Forms.TextBox tbQuanPencil;
+        private System.Windows.Forms.CheckBox cbPencil;
         private System.Windows.Forms.Label labelBaht4;
-        private System.Windows.Forms.Label labelTotalRuler;
-        private System.Windows.Forms.TextBox TBRuler;
-        private System.Windows.Forms.CheckBox checkBoxRuler;
+        private System.Windows.Forms.Label lbTotalRuler;
+        private System.Windows.Forms.TextBox tbQuanRuler;
+        private System.Windows.Forms.CheckBox cbRuler;
         private System.Windows.Forms.Label labelBaht5;
-        private System.Windows.Forms.Label labelTotalNbook;
-        private System.Windows.Forms.TextBox TBNbook;
-        private System.Windows.Forms.CheckBox checkBoxNbook;
-        private System.Windows.Forms.Label labelDiscount;
+        private System.Windows.Forms.Label lbTotalNbook;
+        private System.Windows.Forms.TextBox tbQuanNotebook;
+        private System.Windows.Forms.CheckBox cbNotebook;
+        private System.Windows.Forms.Label lbDiscount;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button BTCalculate;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lbTotalResult;
+        private System.Windows.Forms.Label lbTotal;
+        private System.Windows.Forms.Label lbResultBaht;
+        private System.Windows.Forms.Button btCalculate;
+        private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripLabel tslbUsername;
+        private System.Windows.Forms.ToolStripLabel tslbDateTime;
+        private System.Windows.Forms.Timer timer;
     }
 }
