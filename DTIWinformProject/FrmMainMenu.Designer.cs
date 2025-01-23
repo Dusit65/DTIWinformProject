@@ -65,9 +65,9 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tslbUsername,
             this.tslbDateTime});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 626);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 650);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1013, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1025, 25);
             this.toolStrip1.TabIndex = 10;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -101,6 +101,7 @@
             // 
             // btGoShapeArea
             // 
+            this.btGoShapeArea.AutoSize = true;
             this.btGoShapeArea.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btGoShapeArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btGoShapeArea.Image = global::DTIWinformProject.Properties.Resources.menu7;
@@ -137,7 +138,7 @@
             this.btGoLotto.Location = new System.Drawing.Point(843, 101);
             this.btGoLotto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btGoLotto.Name = "btGoLotto";
-            this.btGoLotto.Size = new System.Drawing.Size(160, 172);
+            this.btGoLotto.Size = new System.Drawing.Size(160, 182);
             this.btGoLotto.TabIndex = 6;
             this.btGoLotto.Text = "Go to Lotto";
             this.btGoLotto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -146,6 +147,7 @@
             // 
             // btGoDooDuang
             // 
+            this.btGoDooDuang.AutoSize = true;
             this.btGoDooDuang.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btGoDooDuang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btGoDooDuang.Image = global::DTIWinformProject.Properties.Resources.menu5;
@@ -167,7 +169,7 @@
             this.btGoSAUShop.Location = new System.Drawing.Point(573, 101);
             this.btGoSAUShop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btGoSAUShop.Name = "btGoSAUShop";
-            this.btGoSAUShop.Size = new System.Drawing.Size(160, 172);
+            this.btGoSAUShop.Size = new System.Drawing.Size(160, 182);
             this.btGoSAUShop.TabIndex = 4;
             this.btGoSAUShop.Text = "Go to SAU Shop";
             this.btGoSAUShop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -182,7 +184,7 @@
             this.btGoCalculator.Location = new System.Drawing.Point(296, 101);
             this.btGoCalculator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btGoCalculator.Name = "btGoCalculator";
-            this.btGoCalculator.Size = new System.Drawing.Size(160, 172);
+            this.btGoCalculator.Size = new System.Drawing.Size(160, 182);
             this.btGoCalculator.TabIndex = 3;
             this.btGoCalculator.Text = "Go to Calculator";
             this.btGoCalculator.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -197,7 +199,7 @@
             this.btGoWelcome.Location = new System.Drawing.Point(19, 101);
             this.btGoWelcome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btGoWelcome.Name = "btGoWelcome";
-            this.btGoWelcome.Size = new System.Drawing.Size(160, 172);
+            this.btGoWelcome.Size = new System.Drawing.Size(160, 182);
             this.btGoWelcome.TabIndex = 2;
             this.btGoWelcome.Text = "Go to Welcome";
             this.btGoWelcome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -212,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 651);
+            this.ClientSize = new System.Drawing.Size(1025, 675);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.btLogout);
             this.Controls.Add(this.btGoShapeArea);

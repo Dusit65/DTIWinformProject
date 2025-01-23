@@ -353,7 +353,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmLotto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "หน้าจอSAU Shop- DTI Soft V.1.0";
+            this.Text = "หน้าจอLotto- DTI Soft V.1.0";
             this.Load += new System.EventHandler(this.FrmLotto_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

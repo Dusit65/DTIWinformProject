@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmWelcome));
             this.HeadLabel = new System.Windows.Forms.Label();
-            this.tbUsername = new System.Windows.Forms.TextBox();
+            this.tbFullname = new System.Windows.Forms.TextBox();
             this.TextBirthDate = new System.Windows.Forms.Label();
-            this.TextUser = new System.Windows.Forms.Label();
-            this.birthDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.btAccept = new System.Windows.Forms.Button();
+            this.lbFullname = new System.Windows.Forms.Label();
+            this.dtBirthDate = new System.Windows.Forms.DateTimePicker();
+            this.btOK = new System.Windows.Forms.Button();
             this.btCancel = new System.Windows.Forms.Button();
             this.btMainMenu = new System.Windows.Forms.Button();
-            this.rdWomen = new System.Windows.Forms.RadioButton();
-            this.rdMen = new System.Windows.Forms.RadioButton();
-            this.BottomLabel = new System.Windows.Forms.Label();
+            this.rdFemale = new System.Windows.Forms.RadioButton();
+            this.rdMale = new System.Windows.Forms.RadioButton();
+            this.lbResult = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tslbUsername = new System.Windows.Forms.ToolStripLabel();
             this.tslbDateTime = new System.Windows.Forms.ToolStripLabel();
@@ -60,14 +60,14 @@
             this.HeadLabel.Text = "Welcome";
             this.HeadLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tbUsername
+            // tbFullname
             // 
-            this.tbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsername.Location = new System.Drawing.Point(225, 148);
-            this.tbUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(441, 34);
-            this.tbUsername.TabIndex = 7;
+            this.tbFullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFullname.Location = new System.Drawing.Point(225, 148);
+            this.tbFullname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbFullname.Name = "tbFullname";
+            this.tbFullname.Size = new System.Drawing.Size(441, 34);
+            this.tbFullname.TabIndex = 7;
             // 
             // TextBirthDate
             // 
@@ -79,38 +79,39 @@
             this.TextBirthDate.TabIndex = 6;
             this.TextBirthDate.Text = "ว/ด/ป เกิด :";
             // 
-            // TextUser
+            // lbFullname
             // 
-            this.TextUser.AutoSize = true;
-            this.TextUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextUser.Location = new System.Drawing.Point(112, 153);
-            this.TextUser.Name = "TextUser";
-            this.TextUser.Size = new System.Drawing.Size(97, 29);
-            this.TextUser.TabIndex = 5;
-            this.TextUser.Text = "ชื่อ-สกุล :";
+            this.lbFullname.AutoSize = true;
+            this.lbFullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFullname.Location = new System.Drawing.Point(112, 153);
+            this.lbFullname.Name = "lbFullname";
+            this.lbFullname.Size = new System.Drawing.Size(97, 29);
+            this.lbFullname.TabIndex = 5;
+            this.lbFullname.Text = "ชื่อ-สกุล :";
             // 
-            // birthDateTimePicker
+            // dtBirthDate
             // 
-            this.birthDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.birthDateTimePicker.Location = new System.Drawing.Point(225, 210);
-            this.birthDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.birthDateTimePicker.Name = "birthDateTimePicker";
-            this.birthDateTimePicker.Size = new System.Drawing.Size(441, 34);
-            this.birthDateTimePicker.TabIndex = 8;
+            this.dtBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtBirthDate.Location = new System.Drawing.Point(225, 210);
+            this.dtBirthDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBirthDate.Name = "dtBirthDate";
+            this.dtBirthDate.Size = new System.Drawing.Size(441, 34);
+            this.dtBirthDate.TabIndex = 8;
             // 
-            // btAccept
+            // btOK
             // 
-            this.btAccept.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btAccept.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAccept.Image = global::DTIWinformProject.Properties.Resources.ok;
-            this.btAccept.Location = new System.Drawing.Point(792, 382);
-            this.btAccept.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btAccept.Name = "btAccept";
-            this.btAccept.Size = new System.Drawing.Size(125, 79);
-            this.btAccept.TabIndex = 10;
-            this.btAccept.Text = "ตกลง";
-            this.btAccept.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btAccept.UseVisualStyleBackColor = false;
+            this.btOK.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btOK.Image = global::DTIWinformProject.Properties.Resources.ok;
+            this.btOK.Location = new System.Drawing.Point(792, 382);
+            this.btOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btOK.Name = "btOK";
+            this.btOK.Size = new System.Drawing.Size(125, 79);
+            this.btOK.TabIndex = 10;
+            this.btOK.Text = "ตกลง";
+            this.btOK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btOK.UseVisualStyleBackColor = false;
+            this.btOK.Click += new System.EventHandler(this.btOK_Click);
             // 
             // btCancel
             // 
@@ -125,59 +126,60 @@
             this.btCancel.Text = "ยกเลิก";
             this.btCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btCancel.UseVisualStyleBackColor = false;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // btMainMenu
             // 
             this.btMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
-            this.btMainMenu.Location = new System.Drawing.Point(771, 12);
+            this.btMainMenu.Location = new System.Drawing.Point(777, 12);
             this.btMainMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btMainMenu.Name = "btMainMenu";
-            this.btMainMenu.Size = new System.Drawing.Size(160, 103);
+            this.btMainMenu.Size = new System.Drawing.Size(125, 103);
             this.btMainMenu.TabIndex = 3;
             this.btMainMenu.Text = "หน้าจอหลัก";
             this.btMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btMainMenu.UseVisualStyleBackColor = false;
             this.btMainMenu.Click += new System.EventHandler(this.btMainMenu_Click);
             // 
-            // rdWomen
+            // rdFemale
             // 
-            this.rdWomen.AutoSize = true;
-            this.rdWomen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdWomen.Location = new System.Drawing.Point(477, 288);
-            this.rdWomen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rdWomen.Name = "rdWomen";
-            this.rdWomen.Size = new System.Drawing.Size(63, 26);
-            this.rdWomen.TabIndex = 12;
-            this.rdWomen.Text = "หญิง";
-            this.rdWomen.UseVisualStyleBackColor = true;
+            this.rdFemale.AutoSize = true;
+            this.rdFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdFemale.Location = new System.Drawing.Point(477, 288);
+            this.rdFemale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdFemale.Name = "rdFemale";
+            this.rdFemale.Size = new System.Drawing.Size(63, 26);
+            this.rdFemale.TabIndex = 12;
+            this.rdFemale.Text = "หญิง";
+            this.rdFemale.UseVisualStyleBackColor = true;
             // 
-            // rdMen
+            // rdMale
             // 
-            this.rdMen.AutoSize = true;
-            this.rdMen.Checked = true;
-            this.rdMen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdMen.Location = new System.Drawing.Point(314, 288);
-            this.rdMen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rdMen.Name = "rdMen";
-            this.rdMen.Size = new System.Drawing.Size(58, 26);
-            this.rdMen.TabIndex = 11;
-            this.rdMen.TabStop = true;
-            this.rdMen.Text = "ชาย";
-            this.rdMen.UseVisualStyleBackColor = true;
+            this.rdMale.AutoSize = true;
+            this.rdMale.Checked = true;
+            this.rdMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdMale.Location = new System.Drawing.Point(314, 288);
+            this.rdMale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdMale.Name = "rdMale";
+            this.rdMale.Size = new System.Drawing.Size(58, 26);
+            this.rdMale.TabIndex = 11;
+            this.rdMale.TabStop = true;
+            this.rdMale.Text = "ชาย";
+            this.rdMale.UseVisualStyleBackColor = true;
             // 
-            // BottomLabel
+            // lbResult
             // 
-            this.BottomLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.BottomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BottomLabel.ForeColor = System.Drawing.Color.Blue;
-            this.BottomLabel.Location = new System.Drawing.Point(73, 382);
-            this.BottomLabel.Name = "BottomLabel";
-            this.BottomLabel.Size = new System.Drawing.Size(627, 176);
-            this.BottomLabel.TabIndex = 13;
-            this.BottomLabel.Text = "?????";
-            this.BottomLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lbResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbResult.ForeColor = System.Drawing.Color.Blue;
+            this.lbResult.Location = new System.Drawing.Point(59, 382);
+            this.lbResult.Name = "lbResult";
+            this.lbResult.Size = new System.Drawing.Size(627, 176);
+            this.lbResult.TabIndex = 13;
+            this.lbResult.Text = "Welcome";
+            this.lbResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // toolStrip1
             // 
@@ -216,15 +218,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1013, 651);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.BottomLabel);
-            this.Controls.Add(this.rdWomen);
-            this.Controls.Add(this.rdMen);
-            this.Controls.Add(this.btAccept);
+            this.Controls.Add(this.lbResult);
+            this.Controls.Add(this.rdFemale);
+            this.Controls.Add(this.rdMale);
+            this.Controls.Add(this.btOK);
             this.Controls.Add(this.btCancel);
-            this.Controls.Add(this.birthDateTimePicker);
-            this.Controls.Add(this.tbUsername);
+            this.Controls.Add(this.dtBirthDate);
+            this.Controls.Add(this.tbFullname);
             this.Controls.Add(this.TextBirthDate);
-            this.Controls.Add(this.TextUser);
+            this.Controls.Add(this.lbFullname);
             this.Controls.Add(this.btMainMenu);
             this.Controls.Add(this.HeadLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -246,15 +248,15 @@
 
         private System.Windows.Forms.Label HeadLabel;
         private System.Windows.Forms.Button btMainMenu;
-        private System.Windows.Forms.TextBox tbUsername;
+        private System.Windows.Forms.TextBox tbFullname;
         private System.Windows.Forms.Label TextBirthDate;
-        private System.Windows.Forms.Label TextUser;
-        private System.Windows.Forms.DateTimePicker birthDateTimePicker;
+        private System.Windows.Forms.Label lbFullname;
+        private System.Windows.Forms.DateTimePicker dtBirthDate;
         private System.Windows.Forms.Button btCancel;
-        private System.Windows.Forms.Button btAccept;
-        private System.Windows.Forms.RadioButton rdWomen;
-        private System.Windows.Forms.RadioButton rdMen;
-        private System.Windows.Forms.Label BottomLabel;
+        private System.Windows.Forms.Button btOK;
+        private System.Windows.Forms.RadioButton rdFemale;
+        private System.Windows.Forms.RadioButton rdMale;
+        private System.Windows.Forms.Label lbResult;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel tslbUsername;
         private System.Windows.Forms.ToolStripLabel tslbDateTime;
