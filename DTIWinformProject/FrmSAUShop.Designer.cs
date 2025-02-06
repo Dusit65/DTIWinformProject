@@ -120,7 +120,7 @@
             this.gbResult.Margin = new System.Windows.Forms.Padding(2);
             this.gbResult.Name = "gbResult";
             this.gbResult.Padding = new System.Windows.Forms.Padding(2);
-            this.gbResult.Size = new System.Drawing.Size(653, 83);
+            this.gbResult.Size = new System.Drawing.Size(645, 83);
             this.gbResult.TabIndex = 8;
             this.gbResult.TabStop = false;
             // 
@@ -476,7 +476,7 @@
             this.btMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
-            this.btMainMenu.Location = new System.Drawing.Point(579, 7);
+            this.btMainMenu.Location = new System.Drawing.Point(571, 7);
             this.btMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btMainMenu.Name = "btMainMenu";
             this.btMainMenu.Size = new System.Drawing.Size(120, 84);
