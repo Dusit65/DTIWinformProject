@@ -17,7 +17,6 @@ namespace DTIWinformProject
         {
             InitializeComponent();
         }
-
         private void FrmDooDuang_Load(object sender, EventArgs e)
         {
             tslbUsername.Text = ShareData.loginName + " (" + ShareData.loginType + ")";
