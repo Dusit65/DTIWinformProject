@@ -36,7 +36,7 @@ namespace DTIWinformProject
                 e.Handled = true; // ไม่อนุญาตให้ป้อนจุดอีก 
             }
         }
-        //KeyPress=============================================================================
+        //KeyPress============================================================================
         private void tbRadius_KeyPress(object sender, KeyPressEventArgs e)
         {
             keyNumberAndDotOnly(sender, e);
@@ -81,6 +81,7 @@ namespace DTIWinformProject
             frmMainMenu.Show();
             Hide();//ปิดหน้าจอ
         }
+
         //Circle Tab ========================================================================
         private void btCircleCal_Click(object sender, EventArgs e)
         {
