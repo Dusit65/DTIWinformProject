@@ -196,11 +196,11 @@ namespace DTIWinformProject
                 //เอาวิชาที่เลือกมาเก็บไว้ใน List
                 foreach (var item in lsbSubjectSelectedRegis.Items)
                 {
-                    ShareData.subjectRegist.Add(item.ToString());
+                    ShareData.subjectRegisItemsShow.Add(item.ToString());
                 }
 
                 //แปลง list เป็น string
-                ShareData.subjectRegis = string.Join("\n", ShareData.subjectRegist);
+                ShareData.subjectRegisItems = string.Join("\n", ShareData.subjectRegisItemsShow);
 
                 FrmSAURegisterResult frmregisterResult = new FrmSAURegisterResult();
                 frmregisterResult.Show();

@@ -191,13 +191,14 @@
             this.btOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btOk.Image = global::DTIWinformProject.Properties.Resources.ok1;
             this.btOk.Location = new System.Drawing.Point(71, 462);
-            this.btOk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btOk.Margin = new System.Windows.Forms.Padding(2);
             this.btOk.Name = "btOk";
             this.btOk.Size = new System.Drawing.Size(116, 70);
             this.btOk.TabIndex = 70;
             this.btOk.Text = "ตกลง";
             this.btOk.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btOk.UseVisualStyleBackColor = false;
+            this.btOk.Click += new System.EventHandler(this.btOk_Click);
             // 
             // pbImageRegisShow
             // 

@@ -59,8 +59,8 @@
             this.btCancel = new System.Windows.Forms.Button();
             this.btRegis = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.pbImageRegis = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.pbImageRegis = new System.Windows.Forms.PictureBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImageRegis)).BeginInit();
             this.SuspendLayout();
@@ -68,7 +68,7 @@
             // mcdRegis
             // 
             this.mcdRegis.Location = new System.Drawing.Point(52, 98);
-            this.mcdRegis.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.mcdRegis.Margin = new System.Windows.Forms.Padding(7);
             this.mcdRegis.Name = "mcdRegis";
             this.mcdRegis.TabIndex = 0;
             // 
@@ -92,7 +92,7 @@
             "เคมี",
             "ชีววิทยา"});
             this.lsbSubjectRegis.Location = new System.Drawing.Point(52, 351);
-            this.lsbSubjectRegis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lsbSubjectRegis.Margin = new System.Windows.Forms.Padding(2);
             this.lsbSubjectRegis.Name = "lsbSubjectRegis";
             this.lsbSubjectRegis.Size = new System.Drawing.Size(121, 147);
             this.lsbSubjectRegis.TabIndex = 1;
@@ -245,7 +245,7 @@
             // 
             this.tbNoRegis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNoRegis.Location = new System.Drawing.Point(281, 117);
-            this.tbNoRegis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNoRegis.Margin = new System.Windows.Forms.Padding(2);
             this.tbNoRegis.Name = "tbNoRegis";
             this.tbNoRegis.Size = new System.Drawing.Size(224, 22);
             this.tbNoRegis.TabIndex = 48;
@@ -265,7 +265,7 @@
             // 
             this.tbNameRegis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNameRegis.Location = new System.Drawing.Point(281, 196);
-            this.tbNameRegis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNameRegis.Margin = new System.Windows.Forms.Padding(2);
             this.tbNameRegis.Name = "tbNameRegis";
             this.tbNameRegis.Size = new System.Drawing.Size(224, 22);
             this.tbNameRegis.TabIndex = 52;
@@ -297,7 +297,7 @@
             this.rfFundRegis.AutoSize = true;
             this.rfFundRegis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rfFundRegis.Location = new System.Drawing.Point(413, 269);
-            this.rfFundRegis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rfFundRegis.Margin = new System.Windows.Forms.Padding(2);
             this.rfFundRegis.Name = "rfFundRegis";
             this.rfFundRegis.Size = new System.Drawing.Size(64, 20);
             this.rfFundRegis.TabIndex = 55;
@@ -310,7 +310,7 @@
             this.rdNormalRegis.Checked = true;
             this.rdNormalRegis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdNormalRegis.Location = new System.Drawing.Point(313, 269);
-            this.rdNormalRegis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdNormalRegis.Margin = new System.Windows.Forms.Padding(2);
             this.rdNormalRegis.Name = "rdNormalRegis";
             this.rdNormalRegis.Size = new System.Drawing.Size(45, 20);
             this.rdNormalRegis.TabIndex = 54;
@@ -336,7 +336,7 @@
             this.cbConfirmRegis.AutoSize = true;
             this.cbConfirmRegis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbConfirmRegis.Location = new System.Drawing.Point(531, 359);
-            this.cbConfirmRegis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbConfirmRegis.Margin = new System.Windows.Forms.Padding(2);
             this.cbConfirmRegis.Name = "cbConfirmRegis";
             this.cbConfirmRegis.Size = new System.Drawing.Size(118, 20);
             this.cbConfirmRegis.TabIndex = 58;
@@ -349,7 +349,7 @@
             this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
             this.btMainMenu.Location = new System.Drawing.Point(607, 11);
-            this.btMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btMainMenu.Name = "btMainMenu";
             this.btMainMenu.Size = new System.Drawing.Size(120, 65);
             this.btMainMenu.TabIndex = 62;
@@ -364,7 +364,7 @@
             this.btExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btExit.Image = global::DTIWinformProject.Properties.Resources.exit3;
             this.btExit.Location = new System.Drawing.Point(531, 467);
-            this.btExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btExit.Margin = new System.Windows.Forms.Padding(2);
             this.btExit.Name = "btExit";
             this.btExit.Size = new System.Drawing.Size(288, 49);
             this.btExit.TabIndex = 61;
@@ -379,7 +379,7 @@
             this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCancel.Image = global::DTIWinformProject.Properties.Resources.cancel;
             this.btCancel.Location = new System.Drawing.Point(531, 412);
-            this.btCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(288, 50);
             this.btCancel.TabIndex = 60;
@@ -395,7 +395,7 @@
             this.btRegis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRegis.Image = global::DTIWinformProject.Properties.Resources.add1;
             this.btRegis.Location = new System.Drawing.Point(651, 359);
-            this.btRegis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btRegis.Margin = new System.Windows.Forms.Padding(2);
             this.btRegis.Name = "btRegis";
             this.btRegis.Size = new System.Drawing.Size(168, 49);
             this.btRegis.TabIndex = 59;
@@ -409,20 +409,18 @@
             // 
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // pbImageRegis
-            // 
-            this.pbImageRegis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbImageRegis.Location = new System.Drawing.Point(594, 104);
-            this.pbImageRegis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pbImageRegis.Name = "pbImageRegis";
-            this.pbImageRegis.Size = new System.Drawing.Size(148, 203);
-            this.pbImageRegis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbImageRegis.TabIndex = 63;
-            this.pbImageRegis.TabStop = false;
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // pbImageRegis
+            // 
+            this.pbImageRegis.Location = new System.Drawing.Point(607, 117);
+            this.pbImageRegis.Name = "pbImageRegis";
+            this.pbImageRegis.Size = new System.Drawing.Size(120, 172);
+            this.pbImageRegis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbImageRegis.TabIndex = 63;
+            this.pbImageRegis.TabStop = false;
             // 
             // FrmSAURegister
             // 
@@ -458,7 +456,7 @@
             this.Controls.Add(this.mcdRegis);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FrmSAURegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -503,7 +501,7 @@
         private System.Windows.Forms.Button btExit;
         private System.Windows.Forms.Button btMainMenu;
         private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.PictureBox pbImageRegis;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.PictureBox pbImageRegis;
     }
 }
