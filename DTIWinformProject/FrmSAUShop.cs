@@ -64,7 +64,7 @@ namespace DTIWinformProject
             lbTotalPay.Text = "0.00";
 
         }
-        //CheckBox=========================================================================================
+        //CheckBox========================================================================================
         private void cbPen_Click(object sender, EventArgs e)
         {
             if (cbPen.Checked) {
