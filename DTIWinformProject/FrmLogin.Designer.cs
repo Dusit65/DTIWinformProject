@@ -51,9 +51,10 @@
             this.HeadLabel.BackColor = System.Drawing.Color.Yellow;
             this.HeadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HeadLabel.ForeColor = System.Drawing.Color.Blue;
-            this.HeadLabel.Location = new System.Drawing.Point(39, 9);
+            this.HeadLabel.Location = new System.Drawing.Point(29, 7);
+            this.HeadLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HeadLabel.Name = "HeadLabel";
-            this.HeadLabel.Size = new System.Drawing.Size(936, 68);
+            this.HeadLabel.Size = new System.Drawing.Size(702, 55);
             this.HeadLabel.TabIndex = 0;
             this.HeadLabel.Text = "DTI Soft V.1.0";
             this.HeadLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -62,9 +63,10 @@
             // 
             this.TextUser.AutoSize = true;
             this.TextUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextUser.Location = new System.Drawing.Point(299, 160);
+            this.TextUser.Location = new System.Drawing.Point(224, 130);
+            this.TextUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TextUser.Name = "TextUser";
-            this.TextUser.Size = new System.Drawing.Size(87, 29);
+            this.TextUser.Size = new System.Drawing.Size(70, 24);
             this.TextUser.TabIndex = 1;
             this.TextUser.Text = "ชื่อผู้ใช้ :";
             // 
@@ -72,27 +74,30 @@
             // 
             this.TextPassword.AutoSize = true;
             this.TextPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextPassword.Location = new System.Drawing.Point(281, 245);
+            this.TextPassword.Location = new System.Drawing.Point(211, 199);
+            this.TextPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TextPassword.Name = "TextPassword";
-            this.TextPassword.Size = new System.Drawing.Size(105, 29);
+            this.TextPassword.Size = new System.Drawing.Size(81, 24);
             this.TextPassword.TabIndex = 2;
             this.TextPassword.Text = "รหัสผ่าน :";
             // 
             // tbUsername
             // 
             this.tbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsername.Location = new System.Drawing.Point(413, 155);
+            this.tbUsername.Location = new System.Drawing.Point(310, 126);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(442, 34);
+            this.tbUsername.Size = new System.Drawing.Size(332, 28);
             this.tbUsername.TabIndex = 3;
             // 
             // tbPassword
             // 
             this.tbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.Location = new System.Drawing.Point(413, 240);
+            this.tbPassword.Location = new System.Drawing.Point(310, 195);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
-            this.tbPassword.Size = new System.Drawing.Size(442, 34);
+            this.tbPassword.Size = new System.Drawing.Size(332, 28);
             this.tbPassword.TabIndex = 4;
             // 
             // rdStudent
@@ -100,9 +105,10 @@
             this.rdStudent.AutoSize = true;
             this.rdStudent.Checked = true;
             this.rdStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdStudent.Location = new System.Drawing.Point(480, 317);
+            this.rdStudent.Location = new System.Drawing.Point(360, 258);
+            this.rdStudent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdStudent.Name = "rdStudent";
-            this.rdStudent.Size = new System.Drawing.Size(93, 26);
+            this.rdStudent.Size = new System.Drawing.Size(76, 22);
             this.rdStudent.TabIndex = 6;
             this.rdStudent.TabStop = true;
             this.rdStudent.Text = "Student";
@@ -112,9 +118,10 @@
             // 
             this.rdTeacher.AutoSize = true;
             this.rdTeacher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdTeacher.Location = new System.Drawing.Point(647, 317);
+            this.rdTeacher.Location = new System.Drawing.Point(485, 258);
+            this.rdTeacher.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdTeacher.Name = "rdTeacher";
-            this.rdTeacher.Size = new System.Drawing.Size(98, 26);
+            this.rdTeacher.Size = new System.Drawing.Size(80, 22);
             this.rdTeacher.TabIndex = 7;
             this.rdTeacher.Text = "Teacher";
             this.rdTeacher.UseVisualStyleBackColor = true;
@@ -124,9 +131,10 @@
             this.btLogout.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLogout.Image = global::DTIWinformProject.Properties.Resources.exit3;
-            this.btLogout.Location = new System.Drawing.Point(413, 495);
+            this.btLogout.Location = new System.Drawing.Point(310, 402);
+            this.btLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btLogout.Name = "btLogout";
-            this.btLogout.Size = new System.Drawing.Size(442, 72);
+            this.btLogout.Size = new System.Drawing.Size(332, 58);
             this.btLogout.TabIndex = 10;
             this.btLogout.Text = "ออกจากระบบ";
             this.btLogout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -139,9 +147,10 @@
             this.btCancel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCancel.Image = global::DTIWinformProject.Properties.Resources.cancel;
-            this.btCancel.Location = new System.Drawing.Point(647, 400);
+            this.btCancel.Location = new System.Drawing.Point(485, 325);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btCancel.Name = "btCancel";
-            this.btCancel.Size = new System.Drawing.Size(208, 72);
+            this.btCancel.Size = new System.Drawing.Size(156, 58);
             this.btCancel.TabIndex = 9;
             this.btCancel.Text = "ยกเลิก";
             this.btCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -154,9 +163,10 @@
             this.btLogin.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLogin.Image = global::DTIWinformProject.Properties.Resources.start;
-            this.btLogin.Location = new System.Drawing.Point(413, 400);
+            this.btLogin.Location = new System.Drawing.Point(310, 325);
+            this.btLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btLogin.Name = "btLogin";
-            this.btLogin.Size = new System.Drawing.Size(208, 72);
+            this.btLogin.Size = new System.Drawing.Size(156, 58);
             this.btLogin.TabIndex = 8;
             this.btLogin.Text = "เข้าใช้งานระบบ";
             this.btLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -172,18 +182,19 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::DTIWinformProject.Properties.Resources.login;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 138);
+            this.pictureBox1.Location = new System.Drawing.Point(34, 112);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(201, 262);
+            this.pictureBox1.Size = new System.Drawing.Size(151, 213);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1014, 651);
+            this.ClientSize = new System.Drawing.Size(760, 529);
             this.Controls.Add(this.btLogout);
             this.Controls.Add(this.btCancel);
             this.Controls.Add(this.btLogin);
@@ -197,10 +208,12 @@
             this.Controls.Add(this.HeadLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login-DTI Soft v.1.0";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
