@@ -18,8 +18,8 @@ namespace DTIWinformProject
         public static String dateRegis;
         public static String imgRegis;
         public static String levelRegis;
-        public static String subjectRegis;
-        public static List<string> subjectRegist = new List<string>();
+        public static String subjectRegisItems;
+        public static List<string> subjectRegisItemsShow = new List<string>();
 
         //Method show warning======================================
         public static void showWarningMSG(String msg)
