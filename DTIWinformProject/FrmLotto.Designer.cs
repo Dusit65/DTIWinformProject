@@ -70,7 +70,7 @@
             this.tslbDateTime});
             this.toolStrip1.Location = new System.Drawing.Point(0, 504);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(757, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(750, 25);
             this.toolStrip1.TabIndex = 33;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -349,7 +349,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(757, 529);
+            this.ClientSize = new System.Drawing.Size(750, 529);
             this.Controls.Add(this.rbOpen);
             this.Controls.Add(this.rdClose);
             this.Controls.Add(this.gbLotto2Bottom);

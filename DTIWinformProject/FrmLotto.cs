@@ -37,7 +37,7 @@ namespace DTIWinformProject
             CultureInfo cultureInfo = new CultureInfo("th_TH");
             tslbDateTime.Text = DateTime.Now.ToString("วันที่ dd MMMM พ.ศ. yyyy เวลา HH:mm:ss น.", cultureInfo);
         }
-        //radio===============================================================================
+        //radio==============================================================================
         private void rdClose_Click(object sender, EventArgs e)
         {
             if (rdClose.Checked == true)
