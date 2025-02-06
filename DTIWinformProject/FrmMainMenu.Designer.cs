@@ -51,9 +51,10 @@
             this.HeadLabel.BackColor = System.Drawing.Color.Yellow;
             this.HeadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HeadLabel.ForeColor = System.Drawing.Color.Blue;
-            this.HeadLabel.Location = new System.Drawing.Point(12, 9);
+            this.HeadLabel.Location = new System.Drawing.Point(9, 7);
+            this.HeadLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HeadLabel.Name = "HeadLabel";
-            this.HeadLabel.Size = new System.Drawing.Size(989, 68);
+            this.HeadLabel.Size = new System.Drawing.Size(742, 55);
             this.HeadLabel.TabIndex = 1;
             this.HeadLabel.Text = "DTI Soft V.1.0";
             this.HeadLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -65,9 +66,9 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tslbUsername,
             this.tslbDateTime});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 650);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 519);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1025, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(769, 25);
             this.toolStrip1.TabIndex = 10;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -75,13 +76,13 @@
             // 
             this.tslbUsername.ForeColor = System.Drawing.Color.Blue;
             this.tslbUsername.Name = "tslbUsername";
-            this.tslbUsername.Size = new System.Drawing.Size(53, 22);
+            this.tslbUsername.Size = new System.Drawing.Size(42, 22);
             this.tslbUsername.Text = "name?";
             // 
             // tslbDateTime
             // 
             this.tslbDateTime.Name = "tslbDateTime";
-            this.tslbDateTime.Size = new System.Drawing.Size(76, 22);
+            this.tslbDateTime.Size = new System.Drawing.Size(59, 22);
             this.tslbDateTime.Text = "datetime?";
             // 
             // btLogout
@@ -89,10 +90,10 @@
             this.btLogout.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLogout.Image = global::DTIWinformProject.Properties.Resources.exitapp;
-            this.btLogout.Location = new System.Drawing.Point(843, 374);
-            this.btLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btLogout.Location = new System.Drawing.Point(632, 304);
+            this.btLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btLogout.Name = "btLogout";
-            this.btLogout.Size = new System.Drawing.Size(160, 172);
+            this.btLogout.Size = new System.Drawing.Size(120, 155);
             this.btLogout.TabIndex = 9;
             this.btLogout.Text = "ออกจากระบบ";
             this.btLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -105,10 +106,10 @@
             this.btGoShapeArea.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btGoShapeArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btGoShapeArea.Image = global::DTIWinformProject.Properties.Resources.menu7;
-            this.btGoShapeArea.Location = new System.Drawing.Point(296, 374);
-            this.btGoShapeArea.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGoShapeArea.Location = new System.Drawing.Point(222, 304);
+            this.btGoShapeArea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btGoShapeArea.Name = "btGoShapeArea";
-            this.btGoShapeArea.Size = new System.Drawing.Size(160, 172);
+            this.btGoShapeArea.Size = new System.Drawing.Size(134, 155);
             this.btGoShapeArea.TabIndex = 8;
             this.btGoShapeArea.Text = "Go to Shape Area";
             this.btGoShapeArea.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -120,10 +121,10 @@
             this.btGoRegister.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btGoRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btGoRegister.Image = global::DTIWinformProject.Properties.Resources.menu6;
-            this.btGoRegister.Location = new System.Drawing.Point(573, 374);
-            this.btGoRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGoRegister.Location = new System.Drawing.Point(430, 304);
+            this.btGoRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btGoRegister.Name = "btGoRegister";
-            this.btGoRegister.Size = new System.Drawing.Size(160, 172);
+            this.btGoRegister.Size = new System.Drawing.Size(120, 155);
             this.btGoRegister.TabIndex = 7;
             this.btGoRegister.Text = "Go to Register";
             this.btGoRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -135,10 +136,10 @@
             this.btGoLotto.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btGoLotto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btGoLotto.Image = global::DTIWinformProject.Properties.Resources.menu4;
-            this.btGoLotto.Location = new System.Drawing.Point(843, 101);
-            this.btGoLotto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGoLotto.Location = new System.Drawing.Point(632, 82);
+            this.btGoLotto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btGoLotto.Name = "btGoLotto";
-            this.btGoLotto.Size = new System.Drawing.Size(160, 182);
+            this.btGoLotto.Size = new System.Drawing.Size(120, 148);
             this.btGoLotto.TabIndex = 6;
             this.btGoLotto.Text = "Go to Lotto";
             this.btGoLotto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -151,10 +152,10 @@
             this.btGoDooDuang.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btGoDooDuang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btGoDooDuang.Image = global::DTIWinformProject.Properties.Resources.menu5;
-            this.btGoDooDuang.Location = new System.Drawing.Point(19, 374);
-            this.btGoDooDuang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGoDooDuang.Location = new System.Drawing.Point(14, 304);
+            this.btGoDooDuang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btGoDooDuang.Name = "btGoDooDuang";
-            this.btGoDooDuang.Size = new System.Drawing.Size(160, 172);
+            this.btGoDooDuang.Size = new System.Drawing.Size(134, 155);
             this.btGoDooDuang.TabIndex = 5;
             this.btGoDooDuang.Text = "Go to Doo Duang";
             this.btGoDooDuang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -166,10 +167,10 @@
             this.btGoSAUShop.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btGoSAUShop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btGoSAUShop.Image = global::DTIWinformProject.Properties.Resources.menu3;
-            this.btGoSAUShop.Location = new System.Drawing.Point(573, 101);
-            this.btGoSAUShop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGoSAUShop.Location = new System.Drawing.Point(430, 82);
+            this.btGoSAUShop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btGoSAUShop.Name = "btGoSAUShop";
-            this.btGoSAUShop.Size = new System.Drawing.Size(160, 182);
+            this.btGoSAUShop.Size = new System.Drawing.Size(120, 148);
             this.btGoSAUShop.TabIndex = 4;
             this.btGoSAUShop.Text = "Go to SAU Shop";
             this.btGoSAUShop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -181,10 +182,10 @@
             this.btGoCalculator.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btGoCalculator.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btGoCalculator.Image = global::DTIWinformProject.Properties.Resources.menu2;
-            this.btGoCalculator.Location = new System.Drawing.Point(296, 101);
-            this.btGoCalculator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGoCalculator.Location = new System.Drawing.Point(222, 82);
+            this.btGoCalculator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btGoCalculator.Name = "btGoCalculator";
-            this.btGoCalculator.Size = new System.Drawing.Size(160, 182);
+            this.btGoCalculator.Size = new System.Drawing.Size(120, 148);
             this.btGoCalculator.TabIndex = 3;
             this.btGoCalculator.Text = "Go to Calculator";
             this.btGoCalculator.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -196,10 +197,10 @@
             this.btGoWelcome.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btGoWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btGoWelcome.Image = global::DTIWinformProject.Properties.Resources.menu1;
-            this.btGoWelcome.Location = new System.Drawing.Point(19, 101);
-            this.btGoWelcome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGoWelcome.Location = new System.Drawing.Point(14, 82);
+            this.btGoWelcome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btGoWelcome.Name = "btGoWelcome";
-            this.btGoWelcome.Size = new System.Drawing.Size(160, 182);
+            this.btGoWelcome.Size = new System.Drawing.Size(120, 148);
             this.btGoWelcome.TabIndex = 2;
             this.btGoWelcome.Text = "Go to Welcome";
             this.btGoWelcome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -212,9 +213,9 @@
             // 
             // FrmMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1025, 675);
+            this.ClientSize = new System.Drawing.Size(769, 544);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.btLogout);
             this.Controls.Add(this.btGoShapeArea);
@@ -227,7 +228,7 @@
             this.Controls.Add(this.HeadLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmMainMenu";

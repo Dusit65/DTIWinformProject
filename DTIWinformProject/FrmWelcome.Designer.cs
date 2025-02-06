@@ -53,9 +53,10 @@
             this.HeadLabel.BackColor = System.Drawing.Color.Yellow;
             this.HeadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HeadLabel.ForeColor = System.Drawing.Color.Blue;
-            this.HeadLabel.Location = new System.Drawing.Point(79, 12);
+            this.HeadLabel.Location = new System.Drawing.Point(59, 10);
+            this.HeadLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HeadLabel.Name = "HeadLabel";
-            this.HeadLabel.Size = new System.Drawing.Size(621, 103);
+            this.HeadLabel.Size = new System.Drawing.Size(466, 84);
             this.HeadLabel.TabIndex = 2;
             this.HeadLabel.Text = "Welcome";
             this.HeadLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -63,19 +64,20 @@
             // tbFullname
             // 
             this.tbFullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbFullname.Location = new System.Drawing.Point(225, 148);
-            this.tbFullname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbFullname.Location = new System.Drawing.Point(169, 120);
+            this.tbFullname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbFullname.Name = "tbFullname";
-            this.tbFullname.Size = new System.Drawing.Size(441, 34);
+            this.tbFullname.Size = new System.Drawing.Size(332, 28);
             this.tbFullname.TabIndex = 7;
             // 
             // TextBirthDate
             // 
             this.TextBirthDate.AutoSize = true;
             this.TextBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBirthDate.Location = new System.Drawing.Point(93, 210);
+            this.TextBirthDate.Location = new System.Drawing.Point(70, 171);
+            this.TextBirthDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TextBirthDate.Name = "TextBirthDate";
-            this.TextBirthDate.Size = new System.Drawing.Size(119, 29);
+            this.TextBirthDate.Size = new System.Drawing.Size(91, 24);
             this.TextBirthDate.TabIndex = 6;
             this.TextBirthDate.Text = "ว/ด/ป เกิด :";
             // 
@@ -83,19 +85,20 @@
             // 
             this.lbFullname.AutoSize = true;
             this.lbFullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFullname.Location = new System.Drawing.Point(112, 153);
+            this.lbFullname.Location = new System.Drawing.Point(84, 124);
+            this.lbFullname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbFullname.Name = "lbFullname";
-            this.lbFullname.Size = new System.Drawing.Size(97, 29);
+            this.lbFullname.Size = new System.Drawing.Size(74, 24);
             this.lbFullname.TabIndex = 5;
             this.lbFullname.Text = "ชื่อ-สกุล :";
             // 
             // dtBirthDate
             // 
             this.dtBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtBirthDate.Location = new System.Drawing.Point(225, 210);
-            this.dtBirthDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBirthDate.Location = new System.Drawing.Point(169, 171);
+            this.dtBirthDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtBirthDate.Name = "dtBirthDate";
-            this.dtBirthDate.Size = new System.Drawing.Size(441, 34);
+            this.dtBirthDate.Size = new System.Drawing.Size(332, 28);
             this.dtBirthDate.TabIndex = 8;
             // 
             // btOK
@@ -103,10 +106,10 @@
             this.btOK.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btOK.Image = global::DTIWinformProject.Properties.Resources.ok;
-            this.btOK.Location = new System.Drawing.Point(792, 382);
-            this.btOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btOK.Location = new System.Drawing.Point(594, 310);
+            this.btOK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btOK.Name = "btOK";
-            this.btOK.Size = new System.Drawing.Size(125, 79);
+            this.btOK.Size = new System.Drawing.Size(94, 64);
             this.btOK.TabIndex = 10;
             this.btOK.Text = "ตกลง";
             this.btOK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -118,10 +121,10 @@
             this.btCancel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCancel.Image = global::DTIWinformProject.Properties.Resources.cancel;
-            this.btCancel.Location = new System.Drawing.Point(792, 479);
-            this.btCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btCancel.Location = new System.Drawing.Point(594, 389);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btCancel.Name = "btCancel";
-            this.btCancel.Size = new System.Drawing.Size(125, 79);
+            this.btCancel.Size = new System.Drawing.Size(94, 64);
             this.btCancel.TabIndex = 9;
             this.btCancel.Text = "ยกเลิก";
             this.btCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -133,10 +136,10 @@
             this.btMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
-            this.btMainMenu.Location = new System.Drawing.Point(777, 12);
-            this.btMainMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btMainMenu.Location = new System.Drawing.Point(583, 10);
+            this.btMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btMainMenu.Name = "btMainMenu";
-            this.btMainMenu.Size = new System.Drawing.Size(125, 103);
+            this.btMainMenu.Size = new System.Drawing.Size(94, 84);
             this.btMainMenu.TabIndex = 3;
             this.btMainMenu.Text = "หน้าจอหลัก";
             this.btMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -147,10 +150,10 @@
             // 
             this.rdFemale.AutoSize = true;
             this.rdFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdFemale.Location = new System.Drawing.Point(477, 288);
-            this.rdFemale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdFemale.Location = new System.Drawing.Point(358, 234);
+            this.rdFemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdFemale.Name = "rdFemale";
-            this.rdFemale.Size = new System.Drawing.Size(63, 26);
+            this.rdFemale.Size = new System.Drawing.Size(52, 22);
             this.rdFemale.TabIndex = 12;
             this.rdFemale.Text = "หญิง";
             this.rdFemale.UseVisualStyleBackColor = true;
@@ -160,10 +163,10 @@
             this.rdMale.AutoSize = true;
             this.rdMale.Checked = true;
             this.rdMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdMale.Location = new System.Drawing.Point(314, 288);
-            this.rdMale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdMale.Location = new System.Drawing.Point(236, 234);
+            this.rdMale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdMale.Name = "rdMale";
-            this.rdMale.Size = new System.Drawing.Size(58, 26);
+            this.rdMale.Size = new System.Drawing.Size(48, 22);
             this.rdMale.TabIndex = 11;
             this.rdMale.TabStop = true;
             this.rdMale.Text = "ชาย";
@@ -174,9 +177,10 @@
             this.lbResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.lbResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbResult.ForeColor = System.Drawing.Color.Blue;
-            this.lbResult.Location = new System.Drawing.Point(59, 382);
+            this.lbResult.Location = new System.Drawing.Point(44, 310);
+            this.lbResult.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbResult.Name = "lbResult";
-            this.lbResult.Size = new System.Drawing.Size(627, 176);
+            this.lbResult.Size = new System.Drawing.Size(470, 143);
             this.lbResult.TabIndex = 13;
             this.lbResult.Text = "Welcome";
             this.lbResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -188,9 +192,9 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tslbUsername,
             this.tslbDateTime});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 626);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 497);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1013, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(760, 25);
             this.toolStrip1.TabIndex = 14;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
@@ -199,13 +203,13 @@
             // 
             this.tslbUsername.ForeColor = System.Drawing.Color.Blue;
             this.tslbUsername.Name = "tslbUsername";
-            this.tslbUsername.Size = new System.Drawing.Size(53, 22);
+            this.tslbUsername.Size = new System.Drawing.Size(42, 22);
             this.tslbUsername.Text = "name?";
             // 
             // tslbDateTime
             // 
             this.tslbDateTime.Name = "tslbDateTime";
-            this.tslbDateTime.Size = new System.Drawing.Size(76, 22);
+            this.tslbDateTime.Size = new System.Drawing.Size(59, 22);
             this.tslbDateTime.Text = "datetime?";
             // 
             // timer
@@ -214,9 +218,9 @@
             // 
             // FrmWelcome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 651);
+            this.ClientSize = new System.Drawing.Size(760, 522);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.lbResult);
             this.Controls.Add(this.rdFemale);
@@ -231,7 +235,7 @@
             this.Controls.Add(this.HeadLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "FrmWelcome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

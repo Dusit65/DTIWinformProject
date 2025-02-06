@@ -70,7 +70,7 @@
             this.tslbDateTime});
             this.toolStrip1.Location = new System.Drawing.Point(0, 504);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(760, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(757, 25);
             this.toolStrip1.TabIndex = 33;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -115,7 +115,7 @@
             // 
             this.dtpLotto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpLotto.Location = new System.Drawing.Point(179, 94);
-            this.dtpLotto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpLotto.Margin = new System.Windows.Forms.Padding(2);
             this.dtpLotto.Name = "dtpLotto";
             this.dtpLotto.Size = new System.Drawing.Size(332, 26);
             this.dtpLotto.TabIndex = 37;
@@ -126,9 +126,9 @@
             this.gbLotto1.Controls.Add(this.lbLotto1);
             this.gbLotto1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbLotto1.Location = new System.Drawing.Point(70, 145);
-            this.gbLotto1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbLotto1.Margin = new System.Windows.Forms.Padding(2);
             this.gbLotto1.Name = "gbLotto1";
-            this.gbLotto1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbLotto1.Padding = new System.Windows.Forms.Padding(2);
             this.gbLotto1.Size = new System.Drawing.Size(448, 88);
             this.gbLotto1.TabIndex = 38;
             this.gbLotto1.TabStop = false;
@@ -139,7 +139,7 @@
             this.btLotto1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btLotto1.Image = global::DTIWinformProject.Properties.Resources.start2;
             this.btLotto1.Location = new System.Drawing.Point(382, 31);
-            this.btLotto1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btLotto1.Margin = new System.Windows.Forms.Padding(2);
             this.btLotto1.Name = "btLotto1";
             this.btLotto1.Size = new System.Drawing.Size(38, 38);
             this.btLotto1.TabIndex = 39;
@@ -165,9 +165,9 @@
             this.gbLotto3Top.Controls.Add(this.lbLotto3Top01);
             this.gbLotto3Top.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbLotto3Top.Location = new System.Drawing.Point(70, 250);
-            this.gbLotto3Top.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbLotto3Top.Margin = new System.Windows.Forms.Padding(2);
             this.gbLotto3Top.Name = "gbLotto3Top";
-            this.gbLotto3Top.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbLotto3Top.Padding = new System.Windows.Forms.Padding(2);
             this.gbLotto3Top.Size = new System.Drawing.Size(208, 112);
             this.gbLotto3Top.TabIndex = 40;
             this.gbLotto3Top.TabStop = false;
@@ -190,7 +190,7 @@
             this.btLotto3Top.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btLotto3Top.Image = global::DTIWinformProject.Properties.Resources.start2;
             this.btLotto3Top.Location = new System.Drawing.Point(153, 46);
-            this.btLotto3Top.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btLotto3Top.Margin = new System.Windows.Forms.Padding(2);
             this.btLotto3Top.Name = "btLotto3Top";
             this.btLotto3Top.Size = new System.Drawing.Size(38, 38);
             this.btLotto3Top.TabIndex = 39;
@@ -216,9 +216,9 @@
             this.gb3Bottom.Controls.Add(this.lbLotto3Bottom01);
             this.gb3Bottom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb3Bottom.Location = new System.Drawing.Point(309, 250);
-            this.gb3Bottom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gb3Bottom.Margin = new System.Windows.Forms.Padding(2);
             this.gb3Bottom.Name = "gb3Bottom";
-            this.gb3Bottom.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gb3Bottom.Padding = new System.Windows.Forms.Padding(2);
             this.gb3Bottom.Size = new System.Drawing.Size(208, 112);
             this.gb3Bottom.TabIndex = 42;
             this.gb3Bottom.TabStop = false;
@@ -241,7 +241,7 @@
             this.btLotto3Bottom.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btLotto3Bottom.Image = global::DTIWinformProject.Properties.Resources.start2;
             this.btLotto3Bottom.Location = new System.Drawing.Point(153, 46);
-            this.btLotto3Bottom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btLotto3Bottom.Margin = new System.Windows.Forms.Padding(2);
             this.btLotto3Bottom.Name = "btLotto3Bottom";
             this.btLotto3Bottom.Size = new System.Drawing.Size(38, 38);
             this.btLotto3Bottom.TabIndex = 39;
@@ -266,9 +266,9 @@
             this.gbLotto2Bottom.Controls.Add(this.lbLotto2Bottom);
             this.gbLotto2Bottom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbLotto2Bottom.Location = new System.Drawing.Point(70, 384);
-            this.gbLotto2Bottom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbLotto2Bottom.Margin = new System.Windows.Forms.Padding(2);
             this.gbLotto2Bottom.Name = "gbLotto2Bottom";
-            this.gbLotto2Bottom.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbLotto2Bottom.Padding = new System.Windows.Forms.Padding(2);
             this.gbLotto2Bottom.Size = new System.Drawing.Size(208, 112);
             this.gbLotto2Bottom.TabIndex = 41;
             this.gbLotto2Bottom.TabStop = false;
@@ -279,7 +279,7 @@
             this.btLotto2Bottom.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btLotto2Bottom.Image = global::DTIWinformProject.Properties.Resources.start2;
             this.btLotto2Bottom.Location = new System.Drawing.Point(153, 46);
-            this.btLotto2Bottom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btLotto2Bottom.Margin = new System.Windows.Forms.Padding(2);
             this.btLotto2Bottom.Name = "btLotto2Bottom";
             this.btLotto2Bottom.Size = new System.Drawing.Size(38, 38);
             this.btLotto2Bottom.TabIndex = 39;
@@ -303,7 +303,7 @@
             this.rbOpen.AutoSize = true;
             this.rbOpen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbOpen.Location = new System.Drawing.Point(365, 404);
-            this.rbOpen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbOpen.Margin = new System.Windows.Forms.Padding(2);
             this.rbOpen.Name = "rbOpen";
             this.rbOpen.Size = new System.Drawing.Size(125, 22);
             this.rbOpen.TabIndex = 44;
@@ -317,7 +317,7 @@
             this.rdClose.Checked = true;
             this.rdClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdClose.Location = new System.Drawing.Point(365, 446);
-            this.rdClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdClose.Margin = new System.Windows.Forms.Padding(2);
             this.rdClose.Name = "rdClose";
             this.rdClose.Size = new System.Drawing.Size(121, 22);
             this.rdClose.TabIndex = 43;
@@ -331,8 +331,8 @@
             this.btMainMenu.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
-            this.btMainMenu.Location = new System.Drawing.Point(598, 7);
-            this.btMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btMainMenu.Location = new System.Drawing.Point(588, 7);
+            this.btMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btMainMenu.Name = "btMainMenu";
             this.btMainMenu.Size = new System.Drawing.Size(120, 84);
             this.btMainMenu.TabIndex = 35;
@@ -349,7 +349,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 529);
+            this.ClientSize = new System.Drawing.Size(757, 529);
             this.Controls.Add(this.rbOpen);
             this.Controls.Add(this.rdClose);
             this.Controls.Add(this.gbLotto2Bottom);
@@ -363,7 +363,7 @@
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FrmLotto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

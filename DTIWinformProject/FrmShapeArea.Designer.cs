@@ -99,7 +99,7 @@
             this.tabPage1.Controls.Add(this.LabeStuId);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(682, 365);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "วงกลม";
@@ -121,7 +121,7 @@
             this.lbCircleShow.BackColor = System.Drawing.Color.Yellow;
             this.lbCircleShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCircleShow.ForeColor = System.Drawing.Color.Red;
-            this.lbCircleShow.Location = new System.Drawing.Point(49, 282);
+            this.lbCircleShow.Location = new System.Drawing.Point(34, 282);
             this.lbCircleShow.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbCircleShow.Name = "lbCircleShow";
             this.lbCircleShow.Size = new System.Drawing.Size(272, 53);
@@ -135,7 +135,7 @@
             this.btCircleCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCircleCancel.Image = global::DTIWinformProject.Properties.Resources.cancel;
             this.btCircleCancel.Location = new System.Drawing.Point(478, 233);
-            this.btCircleCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btCircleCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btCircleCancel.Name = "btCircleCancel";
             this.btCircleCancel.Size = new System.Drawing.Size(94, 64);
             this.btCircleCancel.TabIndex = 57;
@@ -150,7 +150,7 @@
             this.btCircleCal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCircleCal.Image = global::DTIWinformProject.Properties.Resources.calculator2;
             this.btCircleCal.Location = new System.Drawing.Point(478, 157);
-            this.btCircleCal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btCircleCal.Margin = new System.Windows.Forms.Padding(2);
             this.btCircleCal.Name = "btCircleCal";
             this.btCircleCal.Size = new System.Drawing.Size(94, 64);
             this.btCircleCal.TabIndex = 59;
@@ -164,7 +164,7 @@
             this.rdCircleRound.AutoSize = true;
             this.rdCircleRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdCircleRound.Location = new System.Drawing.Point(39, 178);
-            this.rdCircleRound.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdCircleRound.Margin = new System.Windows.Forms.Padding(2);
             this.rdCircleRound.Name = "rdCircleRound";
             this.rdCircleRound.Size = new System.Drawing.Size(84, 22);
             this.rdCircleRound.TabIndex = 56;
@@ -177,7 +177,7 @@
             this.rdCircleArea.Checked = true;
             this.rdCircleArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdCircleArea.Location = new System.Drawing.Point(39, 127);
-            this.rdCircleArea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdCircleArea.Margin = new System.Windows.Forms.Padding(2);
             this.rdCircleArea.Name = "rdCircleArea";
             this.rdCircleArea.Size = new System.Drawing.Size(91, 22);
             this.rdCircleArea.TabIndex = 55;
@@ -189,7 +189,7 @@
             // 
             this.tbRadius.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbRadius.Location = new System.Drawing.Point(39, 58);
-            this.tbRadius.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbRadius.Margin = new System.Windows.Forms.Padding(2);
             this.tbRadius.Name = "tbRadius";
             this.tbRadius.Size = new System.Drawing.Size(224, 22);
             this.tbRadius.TabIndex = 50;
@@ -220,7 +220,7 @@
             this.tabPage2.Controls.Add(this.labelWidth);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(682, 365);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "สี่เหลี่ยม";
@@ -230,7 +230,7 @@
             // 
             this.tbRectHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbRectHeight.Location = new System.Drawing.Point(261, 59);
-            this.tbRectHeight.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbRectHeight.Margin = new System.Windows.Forms.Padding(2);
             this.tbRectHeight.Name = "tbRectHeight";
             this.tbRectHeight.Size = new System.Drawing.Size(146, 22);
             this.tbRectHeight.TabIndex = 71;
@@ -277,7 +277,7 @@
             this.btRectCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRectCancel.Image = global::DTIWinformProject.Properties.Resources.cancel;
             this.btRectCancel.Location = new System.Drawing.Point(515, 235);
-            this.btRectCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btRectCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btRectCancel.Name = "btRectCancel";
             this.btRectCancel.Size = new System.Drawing.Size(94, 64);
             this.btRectCancel.TabIndex = 66;
@@ -292,7 +292,7 @@
             this.btRectCal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRectCal.Image = global::DTIWinformProject.Properties.Resources.calculator2;
             this.btRectCal.Location = new System.Drawing.Point(515, 159);
-            this.btRectCal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btRectCal.Margin = new System.Windows.Forms.Padding(2);
             this.btRectCal.Name = "btRectCal";
             this.btRectCal.Size = new System.Drawing.Size(94, 64);
             this.btRectCal.TabIndex = 67;
@@ -306,7 +306,7 @@
             this.rdRectRound.AutoSize = true;
             this.rdRectRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdRectRound.Location = new System.Drawing.Point(76, 180);
-            this.rdRectRound.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdRectRound.Margin = new System.Windows.Forms.Padding(2);
             this.rdRectRound.Name = "rdRectRound";
             this.rdRectRound.Size = new System.Drawing.Size(116, 22);
             this.rdRectRound.TabIndex = 65;
@@ -319,7 +319,7 @@
             this.rdRectArea.Checked = true;
             this.rdRectArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdRectArea.Location = new System.Drawing.Point(76, 129);
-            this.rdRectArea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdRectArea.Margin = new System.Windows.Forms.Padding(2);
             this.rdRectArea.Name = "rdRectArea";
             this.rdRectArea.Size = new System.Drawing.Size(99, 22);
             this.rdRectArea.TabIndex = 64;
@@ -331,7 +331,7 @@
             // 
             this.tbWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbWidth.Location = new System.Drawing.Point(76, 59);
-            this.tbWidth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbWidth.Margin = new System.Windows.Forms.Padding(2);
             this.tbWidth.Name = "tbWidth";
             this.tbWidth.Size = new System.Drawing.Size(146, 22);
             this.tbWidth.TabIndex = 63;
@@ -373,7 +373,7 @@
             // 
             this.tbSideAngle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSideAngle.Location = new System.Drawing.Point(454, 59);
-            this.tbSideAngle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSideAngle.Margin = new System.Windows.Forms.Padding(2);
             this.tbSideAngle.Name = "tbSideAngle";
             this.tbSideAngle.Size = new System.Drawing.Size(146, 22);
             this.tbSideAngle.TabIndex = 83;
@@ -394,7 +394,7 @@
             // 
             this.tbTriHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTriHeight.Location = new System.Drawing.Point(261, 59);
-            this.tbTriHeight.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbTriHeight.Margin = new System.Windows.Forms.Padding(2);
             this.tbTriHeight.Name = "tbTriHeight";
             this.tbTriHeight.Size = new System.Drawing.Size(146, 22);
             this.tbTriHeight.TabIndex = 81;
@@ -441,7 +441,7 @@
             this.btTriCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btTriCancel.Image = global::DTIWinformProject.Properties.Resources.cancel;
             this.btTriCancel.Location = new System.Drawing.Point(515, 235);
-            this.btTriCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btTriCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btTriCancel.Name = "btTriCancel";
             this.btTriCancel.Size = new System.Drawing.Size(94, 64);
             this.btTriCancel.TabIndex = 76;
@@ -456,7 +456,7 @@
             this.btTriCal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btTriCal.Image = global::DTIWinformProject.Properties.Resources.calculator2;
             this.btTriCal.Location = new System.Drawing.Point(515, 159);
-            this.btTriCal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btTriCal.Margin = new System.Windows.Forms.Padding(2);
             this.btTriCal.Name = "btTriCal";
             this.btTriCal.Size = new System.Drawing.Size(94, 64);
             this.btTriCal.TabIndex = 77;
@@ -470,7 +470,7 @@
             this.rdTriRound.AutoSize = true;
             this.rdTriRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdTriRound.Location = new System.Drawing.Point(76, 180);
-            this.rdTriRound.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdTriRound.Margin = new System.Windows.Forms.Padding(2);
             this.rdTriRound.Name = "rdTriRound";
             this.rdTriRound.Size = new System.Drawing.Size(131, 22);
             this.rdTriRound.TabIndex = 75;
@@ -483,7 +483,7 @@
             this.rdTriArea.Checked = true;
             this.rdTriArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdTriArea.Location = new System.Drawing.Point(76, 129);
-            this.rdTriArea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdTriArea.Margin = new System.Windows.Forms.Padding(2);
             this.rdTriArea.Name = "rdTriArea";
             this.rdTriArea.Size = new System.Drawing.Size(114, 22);
             this.rdTriArea.TabIndex = 74;
@@ -495,7 +495,7 @@
             // 
             this.tbBase.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBase.Location = new System.Drawing.Point(76, 59);
-            this.tbBase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbBase.Margin = new System.Windows.Forms.Padding(2);
             this.tbBase.Name = "tbBase";
             this.tbBase.Size = new System.Drawing.Size(146, 22);
             this.tbBase.TabIndex = 73;
@@ -531,7 +531,7 @@
             this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
             this.btMainMenu.Location = new System.Drawing.Point(614, 28);
-            this.btMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btMainMenu.Name = "btMainMenu";
             this.btMainMenu.Size = new System.Drawing.Size(120, 63);
             this.btMainMenu.TabIndex = 63;

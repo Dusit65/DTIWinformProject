@@ -85,7 +85,7 @@
             // 
             this.tbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbUsername.Location = new System.Drawing.Point(310, 126);
-            this.tbUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(2);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(332, 28);
             this.tbUsername.TabIndex = 3;
@@ -94,7 +94,7 @@
             // 
             this.tbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPassword.Location = new System.Drawing.Point(310, 195);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(2);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(332, 28);
@@ -106,7 +106,7 @@
             this.rdStudent.Checked = true;
             this.rdStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdStudent.Location = new System.Drawing.Point(360, 258);
-            this.rdStudent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdStudent.Margin = new System.Windows.Forms.Padding(2);
             this.rdStudent.Name = "rdStudent";
             this.rdStudent.Size = new System.Drawing.Size(76, 22);
             this.rdStudent.TabIndex = 6;
@@ -119,7 +119,7 @@
             this.rdTeacher.AutoSize = true;
             this.rdTeacher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdTeacher.Location = new System.Drawing.Point(485, 258);
-            this.rdTeacher.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdTeacher.Margin = new System.Windows.Forms.Padding(2);
             this.rdTeacher.Name = "rdTeacher";
             this.rdTeacher.Size = new System.Drawing.Size(80, 22);
             this.rdTeacher.TabIndex = 7;
@@ -132,7 +132,7 @@
             this.btLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLogout.Image = global::DTIWinformProject.Properties.Resources.exit3;
             this.btLogout.Location = new System.Drawing.Point(310, 402);
-            this.btLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btLogout.Name = "btLogout";
             this.btLogout.Size = new System.Drawing.Size(332, 58);
             this.btLogout.TabIndex = 10;
@@ -148,7 +148,7 @@
             this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCancel.Image = global::DTIWinformProject.Properties.Resources.cancel;
             this.btCancel.Location = new System.Drawing.Point(485, 325);
-            this.btCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(156, 58);
             this.btCancel.TabIndex = 9;
@@ -164,7 +164,7 @@
             this.btLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLogin.Image = global::DTIWinformProject.Properties.Resources.start;
             this.btLogin.Location = new System.Drawing.Point(310, 325);
-            this.btLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(156, 58);
             this.btLogin.TabIndex = 8;
@@ -183,9 +183,9 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::DTIWinformProject.Properties.Resources.login;
             this.pictureBox1.Location = new System.Drawing.Point(34, 112);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(151, 213);
+            this.pictureBox1.Size = new System.Drawing.Size(151, 210);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -194,7 +194,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 529);
+            this.ClientSize = new System.Drawing.Size(760, 526);
             this.Controls.Add(this.btLogout);
             this.Controls.Add(this.btCancel);
             this.Controls.Add(this.btLogin);
@@ -208,7 +208,7 @@
             this.Controls.Add(this.HeadLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

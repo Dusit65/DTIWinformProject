@@ -52,9 +52,10 @@
             this.lbSubjectShow.AutoSize = true;
             this.lbSubjectShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSubjectShow.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lbSubjectShow.Location = new System.Drawing.Point(317, 513);
+            this.lbSubjectShow.Location = new System.Drawing.Point(238, 417);
+            this.lbSubjectShow.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbSubjectShow.Name = "lbSubjectShow";
-            this.lbSubjectShow.Size = new System.Drawing.Size(129, 20);
+            this.lbSubjectShow.Size = new System.Drawing.Size(97, 16);
             this.lbSubjectShow.TabIndex = 65;
             this.lbSubjectShow.Text = "XXXXXXXXXX";
             // 
@@ -63,9 +64,10 @@
             this.lbLevelShow.AutoSize = true;
             this.lbLevelShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLevelShow.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lbLevelShow.Location = new System.Drawing.Point(317, 472);
+            this.lbLevelShow.Location = new System.Drawing.Point(238, 384);
+            this.lbLevelShow.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbLevelShow.Name = "lbLevelShow";
-            this.lbLevelShow.Size = new System.Drawing.Size(129, 20);
+            this.lbLevelShow.Size = new System.Drawing.Size(97, 16);
             this.lbLevelShow.TabIndex = 64;
             this.lbLevelShow.Text = "XXXXXXXXXX";
             // 
@@ -74,9 +76,10 @@
             this.lbTypeShow.AutoSize = true;
             this.lbTypeShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTypeShow.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lbTypeShow.Location = new System.Drawing.Point(317, 429);
+            this.lbTypeShow.Location = new System.Drawing.Point(238, 349);
+            this.lbTypeShow.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTypeShow.Name = "lbTypeShow";
-            this.lbTypeShow.Size = new System.Drawing.Size(129, 20);
+            this.lbTypeShow.Size = new System.Drawing.Size(97, 16);
             this.lbTypeShow.TabIndex = 63;
             this.lbTypeShow.Text = "XXXXXXXXXX";
             // 
@@ -85,9 +88,10 @@
             this.lbNameShow.AutoSize = true;
             this.lbNameShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNameShow.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lbNameShow.Location = new System.Drawing.Point(317, 387);
+            this.lbNameShow.Location = new System.Drawing.Point(238, 314);
+            this.lbNameShow.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNameShow.Name = "lbNameShow";
-            this.lbNameShow.Size = new System.Drawing.Size(129, 20);
+            this.lbNameShow.Size = new System.Drawing.Size(97, 16);
             this.lbNameShow.TabIndex = 62;
             this.lbNameShow.Text = "XXXXXXXXXX";
             // 
@@ -96,9 +100,10 @@
             this.lbNoShow.AutoSize = true;
             this.lbNoShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNoShow.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lbNoShow.Location = new System.Drawing.Point(317, 342);
+            this.lbNoShow.Location = new System.Drawing.Point(238, 278);
+            this.lbNoShow.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNoShow.Name = "lbNoShow";
-            this.lbNoShow.Size = new System.Drawing.Size(129, 20);
+            this.lbNoShow.Size = new System.Drawing.Size(97, 16);
             this.lbNoShow.TabIndex = 61;
             this.lbNoShow.Text = "XXXXXXXXXX";
             // 
@@ -107,9 +112,10 @@
             this.lbDateShow.AutoSize = true;
             this.lbDateShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDateShow.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lbDateShow.Location = new System.Drawing.Point(317, 300);
+            this.lbDateShow.Location = new System.Drawing.Point(238, 244);
+            this.lbDateShow.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDateShow.Name = "lbDateShow";
-            this.lbDateShow.Size = new System.Drawing.Size(129, 20);
+            this.lbDateShow.Size = new System.Drawing.Size(97, 16);
             this.lbDateShow.TabIndex = 60;
             this.lbDateShow.Text = "XXXXXXXXXX";
             // 
@@ -117,9 +123,10 @@
             // 
             this.labelId.AutoSize = true;
             this.labelId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelId.Location = new System.Drawing.Point(94, 342);
+            this.labelId.Location = new System.Drawing.Point(70, 278);
+            this.labelId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelId.Name = "labelId";
-            this.labelId.Size = new System.Drawing.Size(164, 20);
+            this.labelId.Size = new System.Drawing.Size(117, 16);
             this.labelId.TabIndex = 55;
             this.labelId.Text = "เลขประจำตัวนักเรียน";
             // 
@@ -127,9 +134,10 @@
             // 
             this.labelRegisDate.AutoSize = true;
             this.labelRegisDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRegisDate.Location = new System.Drawing.Point(133, 300);
+            this.labelRegisDate.Location = new System.Drawing.Point(100, 244);
+            this.labelRegisDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRegisDate.Name = "labelRegisDate";
-            this.labelRegisDate.Size = new System.Drawing.Size(120, 20);
+            this.labelRegisDate.Size = new System.Drawing.Size(88, 16);
             this.labelRegisDate.TabIndex = 54;
             this.labelRegisDate.Text = "วันที่ลงทะเบียน";
             // 
@@ -137,9 +145,10 @@
             // 
             this.LabelFullname1.AutoSize = true;
             this.LabelFullname1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelFullname1.Location = new System.Drawing.Point(179, 387);
+            this.LabelFullname1.Location = new System.Drawing.Point(134, 314);
+            this.LabelFullname1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelFullname1.Name = "LabelFullname1";
-            this.LabelFullname1.Size = new System.Drawing.Size(74, 20);
+            this.LabelFullname1.Size = new System.Drawing.Size(53, 16);
             this.LabelFullname1.TabIndex = 66;
             this.LabelFullname1.Text = "ชื่อ-สกุล ";
             // 
@@ -147,9 +156,10 @@
             // 
             this.labelType.AutoSize = true;
             this.labelType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelType.Location = new System.Drawing.Point(129, 429);
+            this.labelType.Location = new System.Drawing.Point(97, 349);
+            this.labelType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelType.Name = "labelType";
-            this.labelType.Size = new System.Drawing.Size(127, 20);
+            this.labelType.Size = new System.Drawing.Size(91, 16);
             this.labelType.TabIndex = 67;
             this.labelType.Text = "ประเภทนักเรียน";
             // 
@@ -157,9 +167,10 @@
             // 
             this.labelSemester.AutoSize = true;
             this.labelSemester.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSemester.Location = new System.Drawing.Point(179, 472);
+            this.labelSemester.Location = new System.Drawing.Point(134, 384);
+            this.labelSemester.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSemester.Name = "labelSemester";
-            this.labelSemester.Size = new System.Drawing.Size(71, 20);
+            this.labelSemester.Size = new System.Drawing.Size(53, 16);
             this.labelSemester.TabIndex = 68;
             this.labelSemester.Text = "ระดับชั้น";
             // 
@@ -167,9 +178,10 @@
             // 
             this.labelSubject.AutoSize = true;
             this.labelSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSubject.Location = new System.Drawing.Point(96, 513);
+            this.labelSubject.Location = new System.Drawing.Point(72, 417);
+            this.labelSubject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSubject.Name = "labelSubject";
-            this.labelSubject.Size = new System.Drawing.Size(157, 20);
+            this.labelSubject.Size = new System.Drawing.Size(114, 16);
             this.labelSubject.TabIndex = 69;
             this.labelSubject.Text = "รายวิชาที่ลงทะเบียน";
             // 
@@ -178,10 +190,10 @@
             this.btOk.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btOk.Image = global::DTIWinformProject.Properties.Resources.ok1;
-            this.btOk.Location = new System.Drawing.Point(95, 568);
-            this.btOk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btOk.Location = new System.Drawing.Point(71, 462);
+            this.btOk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btOk.Name = "btOk";
-            this.btOk.Size = new System.Drawing.Size(155, 86);
+            this.btOk.Size = new System.Drawing.Size(116, 70);
             this.btOk.TabIndex = 70;
             this.btOk.Text = "ตกลง";
             this.btOk.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -189,10 +201,9 @@
             // 
             // pbImageRegisShow
             // 
-            this.pbImageRegisShow.Location = new System.Drawing.Point(215, 81);
-            this.pbImageRegisShow.Margin = new System.Windows.Forms.Padding(4);
+            this.pbImageRegisShow.Location = new System.Drawing.Point(161, 66);
             this.pbImageRegisShow.Name = "pbImageRegisShow";
-            this.pbImageRegisShow.Size = new System.Drawing.Size(155, 192);
+            this.pbImageRegisShow.Size = new System.Drawing.Size(116, 156);
             this.pbImageRegisShow.TabIndex = 71;
             this.pbImageRegisShow.TabStop = false;
             // 
@@ -201,18 +212,19 @@
             this.label1.BackColor = System.Drawing.Color.Yellow;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(46, -3);
+            this.label1.Location = new System.Drawing.Point(34, -2);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(497, 80);
+            this.label1.Size = new System.Drawing.Size(373, 65);
             this.label1.TabIndex = 72;
             this.label1.Text = "ผลการลงทะเบียน";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmSAURegisterResult
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(587, 665);
+            this.ClientSize = new System.Drawing.Size(440, 543);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbImageRegisShow);
             this.Controls.Add(this.btOk);
@@ -229,7 +241,6 @@
             this.Controls.Add(this.labelId);
             this.Controls.Add(this.labelRegisDate);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmSAURegisterResult";
             this.Text = "หน้าจอSAURegisterResult - DTI Soft V.1.0";
             this.Load += new System.EventHandler(this.FrmSAURegisterResult_Load);

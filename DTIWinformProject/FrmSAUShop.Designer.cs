@@ -89,7 +89,7 @@
             this.cbPen.AutoSize = true;
             this.cbPen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPen.Location = new System.Drawing.Point(46, 157);
-            this.cbPen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbPen.Margin = new System.Windows.Forms.Padding(2);
             this.cbPen.Name = "cbPen";
             this.cbPen.Size = new System.Drawing.Size(150, 24);
             this.cbPen.TabIndex = 2;
@@ -116,11 +116,11 @@
             this.gbResult.Controls.Add(this.lbPayBaht);
             this.gbResult.Controls.Add(this.label1);
             this.gbResult.Controls.Add(this.lbTotalPay);
-            this.gbResult.Location = new System.Drawing.Point(80, 401);
-            this.gbResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbResult.Location = new System.Drawing.Point(46, 401);
+            this.gbResult.Margin = new System.Windows.Forms.Padding(2);
             this.gbResult.Name = "gbResult";
-            this.gbResult.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gbResult.Size = new System.Drawing.Size(669, 83);
+            this.gbResult.Padding = new System.Windows.Forms.Padding(2);
+            this.gbResult.Size = new System.Drawing.Size(653, 83);
             this.gbResult.TabIndex = 8;
             this.gbResult.TabStop = false;
             // 
@@ -130,7 +130,7 @@
             this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCancel.Image = global::DTIWinformProject.Properties.Resources.cancel;
             this.btCancel.Location = new System.Drawing.Point(525, 11);
-            this.btCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(94, 64);
             this.btCancel.TabIndex = 8;
@@ -146,7 +146,7 @@
             this.btCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCalculate.Image = global::DTIWinformProject.Properties.Resources.calculator2;
             this.btCalculate.Location = new System.Drawing.Point(388, 11);
-            this.btCalculate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btCalculate.Margin = new System.Windows.Forms.Padding(2);
             this.btCalculate.Name = "btCalculate";
             this.btCalculate.Size = new System.Drawing.Size(94, 64);
             this.btCalculate.TabIndex = 7;
@@ -216,7 +216,7 @@
             // tbPen
             // 
             this.tbPen.Location = new System.Drawing.Point(227, 162);
-            this.tbPen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPen.Margin = new System.Windows.Forms.Padding(2);
             this.tbPen.MaxLength = 3;
             this.tbPen.Name = "tbPen";
             this.tbPen.Size = new System.Drawing.Size(97, 20);
@@ -275,7 +275,7 @@
             // tbRubber
             // 
             this.tbRubber.Location = new System.Drawing.Point(227, 248);
-            this.tbRubber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbRubber.Margin = new System.Windows.Forms.Padding(2);
             this.tbRubber.MaxLength = 3;
             this.tbRubber.Name = "tbRubber";
             this.tbRubber.Size = new System.Drawing.Size(97, 20);
@@ -288,7 +288,7 @@
             this.cbRubber.AutoSize = true;
             this.cbRubber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRubber.Location = new System.Drawing.Point(46, 244);
-            this.cbRubber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbRubber.Margin = new System.Windows.Forms.Padding(2);
             this.cbRubber.Name = "cbRubber";
             this.cbRubber.Size = new System.Drawing.Size(170, 24);
             this.cbRubber.TabIndex = 6;
@@ -324,7 +324,7 @@
             // tbPencil
             // 
             this.tbPencil.Location = new System.Drawing.Point(227, 199);
-            this.tbPencil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPencil.Margin = new System.Windows.Forms.Padding(2);
             this.tbPencil.MaxLength = 3;
             this.tbPencil.Name = "tbPencil";
             this.tbPencil.Size = new System.Drawing.Size(97, 20);
@@ -338,7 +338,7 @@
             this.cbPencil.AutoSize = true;
             this.cbPencil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPencil.Location = new System.Drawing.Point(46, 199);
-            this.cbPencil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbPencil.Margin = new System.Windows.Forms.Padding(2);
             this.cbPencil.Name = "cbPencil";
             this.cbPencil.Size = new System.Drawing.Size(165, 24);
             this.cbPencil.TabIndex = 4;
@@ -374,7 +374,7 @@
             // tbRuler
             // 
             this.tbRuler.Location = new System.Drawing.Point(227, 289);
-            this.tbRuler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbRuler.Margin = new System.Windows.Forms.Padding(2);
             this.tbRuler.MaxLength = 3;
             this.tbRuler.Name = "tbRuler";
             this.tbRuler.Size = new System.Drawing.Size(97, 20);
@@ -387,7 +387,7 @@
             this.cbRuler.AutoSize = true;
             this.cbRuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRuler.Location = new System.Drawing.Point(46, 285);
-            this.cbRuler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbRuler.Margin = new System.Windows.Forms.Padding(2);
             this.cbRuler.Name = "cbRuler";
             this.cbRuler.Size = new System.Drawing.Size(159, 24);
             this.cbRuler.TabIndex = 8;
@@ -423,7 +423,7 @@
             // tbBook
             // 
             this.tbBook.Location = new System.Drawing.Point(227, 332);
-            this.tbBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbBook.Margin = new System.Windows.Forms.Padding(2);
             this.tbBook.MaxLength = 3;
             this.tbBook.Name = "tbBook";
             this.tbBook.Size = new System.Drawing.Size(97, 20);
@@ -436,7 +436,7 @@
             this.cbBook.AutoSize = true;
             this.cbBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbBook.Location = new System.Drawing.Point(46, 328);
-            this.cbBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbBook.Margin = new System.Windows.Forms.Padding(2);
             this.cbBook.Name = "cbBook";
             this.cbBook.Size = new System.Drawing.Size(165, 24);
             this.cbBook.TabIndex = 10;
@@ -465,7 +465,7 @@
             "10 %",
             "15 %"});
             this.cbbDiscount.Location = new System.Drawing.Point(213, 369);
-            this.cbbDiscount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbbDiscount.Margin = new System.Windows.Forms.Padding(2);
             this.cbbDiscount.Name = "cbbDiscount";
             this.cbbDiscount.Size = new System.Drawing.Size(123, 21);
             this.cbbDiscount.TabIndex = 6;
@@ -477,7 +477,7 @@
             this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
             this.btMainMenu.Location = new System.Drawing.Point(579, 7);
-            this.btMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btMainMenu.Name = "btMainMenu";
             this.btMainMenu.Size = new System.Drawing.Size(120, 84);
             this.btMainMenu.TabIndex = 1;
@@ -496,7 +496,7 @@
             this.tslbDateTime});
             this.toolStrip1.Location = new System.Drawing.Point(0, 504);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(760, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(728, 25);
             this.toolStrip1.TabIndex = 32;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -521,7 +521,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 529);
+            this.ClientSize = new System.Drawing.Size(728, 529);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.cbbDiscount);
             this.Controls.Add(this.lbDiscount);
@@ -553,7 +553,7 @@
             this.Controls.Add(this.HeadLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FrmSAUShop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
