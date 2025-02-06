@@ -11,6 +11,16 @@ namespace DTIWinformProject
     {
         public static String loginName;
         public static String loginType;
+
+        public static String noRegis;
+        public static String nameRegis;
+        public static String typeRegis;
+        public static String dateRegis;
+        public static String imgRegis;
+        public static String levelRegis;
+        public static String subjectRegis;
+        public static List<string> subjectRegist = new List<string>();
+
         //Method show warning======================================
         public static void showWarningMSG(String msg)
         {
